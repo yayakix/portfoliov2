@@ -25,7 +25,7 @@ function Home() {
           4000,
           "Iyana"
         ]}
-        wrapper="h2"
+        wrapper="h1"
       />
 
    

@@ -6,7 +6,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* background-color: #333; */
 }
 
 li {
@@ -21,6 +20,11 @@ li a {
   text-decoration: none;
   color: #748DA6;
   font-size: 20px;
+}
+a:hover{
+  text-decoration: underline;
+    text-decoration-color: #748DA6;
+
 }
 
 .bottomnav{

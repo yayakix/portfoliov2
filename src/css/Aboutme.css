@@ -1,4 +1,6 @@
 .aboutme{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 img{
     height: 300px;
@@ -56,7 +58,7 @@ grid-row-gap: 0px;
 
 .button-52:after {
   content: "";
-  background-color: #9CB4CC;
+  background-color: #D3CEDF;
   width: 100%;
   z-index: -1;
   position: absolute;
