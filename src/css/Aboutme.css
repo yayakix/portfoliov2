@@ -89,6 +89,9 @@ grid-row-gap: 0px;
     .container{
         margin-bottom: 40px;
 }
+p{
+    margin: 0px 10px 0px 10px;
+}
 
 }
 @media only screen and (max-width: 500px) {
