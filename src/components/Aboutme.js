@@ -4,17 +4,8 @@ function Aboutme() {
 
   return (
     <div className="aboutme">
-      <div className="leftsection">
+      <div className="container">
         <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
-
-        <img src="https://images.unsplash.com/photo-1622929611233-bd6d58cbd4dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" />
-
-        <img src="https://images.pexels.com/photos/6927334/pexels-photo-6927334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-
-        <img src="https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-      </div>
-
-      <div className="rightsection">
         <p>
           <h3>Funky Shoes</h3>
           This app will show you shoes like no other. Lorem ipsum dolor sit
@@ -32,11 +23,14 @@ function Aboutme() {
             <button class="button-52">View Code</button>
           </a>
         </p>
+      </div>
+
+      <div className="container">
+        <img src="https://images.unsplash.com/photo-1622929611233-bd6d58cbd4dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" />
         <p>
           <h3>Instagram Clone</h3>A clone of the popular Instagram! I recreated
           the home and profile pages. Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Nunc nislLorem ipsum dolor sit amet, consectetur
-         
           <br></br>
           <a href="https://insta-clone33.herokuapp.com/" target="blank">
             <button class="button-52">Live site </button>
@@ -45,6 +39,10 @@ function Aboutme() {
             <button class="button-52">View Code </button>
           </a>
         </p>
+      </div>
+
+      <div className="container">
+        <img src="https://images.pexels.com/photos/6927334/pexels-photo-6927334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
         <p>
           <h3>calculator</h3>A calculator built with React. Built to have a
           similar vibe to the one on your phone. Performs basic four functions
@@ -57,6 +55,10 @@ function Aboutme() {
             <button class="button-52">View Code </button>
           </a>
         </p>
+      </div>
+
+      <div className="container">
+        <img src="https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
         <p>
           <h3>Simon Says Game</h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisl
@@ -72,6 +74,7 @@ function Aboutme() {
           </a>
         </p>
       </div>
+
     </div>
   );
 }
