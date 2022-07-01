@@ -77,6 +77,16 @@ button a{
     padding: 13px 50px 13px;
   }
 }
+@media only screen and (max-width: 500px) {
+ p{
+  
+    white-space: nowrap; 
+  width: 150px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+ }
+}
+
 
 @media only screen and (max-width: 1000px) {
      .button-52 {
@@ -92,7 +102,7 @@ button a{
  img{
      max-width: 200px;
       max-height: 250px;
-      margin: 0px 0px 20px 0px;
+      margin: 0px 10px 20px 0px;
 
  }
  .button-52{
@@ -105,5 +115,10 @@ button a{
  p{
      height: 250px;
      margin: 20px 0px;
+    white-space: pre-wrap; 
+  width: 490px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
  }
 }
+
