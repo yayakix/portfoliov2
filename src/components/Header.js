@@ -20,7 +20,7 @@ function Header() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href="#resume" id="resume">Resume</a>
           </li>
         </div>
       </ul>

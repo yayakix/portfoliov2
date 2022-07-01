@@ -41,4 +41,11 @@ li{
   justify-content: center;
 }
 
+
+}
+
+@media only screen and (max-width: 500px) {
+#resume{
+  display: none;
+}
 }
