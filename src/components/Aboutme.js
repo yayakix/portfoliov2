@@ -35,7 +35,8 @@ function Aboutme() {
         <p>
           <h3>Instagram Clone</h3>A clone of the popular Instagram! I recreated
           the home and profile pages. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Nunc nisl
+          adipiscing elit. Nunc nislLorem ipsum dolor sit amet, consectetur
+         
           <br></br>
           <a href="https://insta-clone33.herokuapp.com/" target="blank">
             <button class="button-52">Live site </button>
@@ -48,7 +49,6 @@ function Aboutme() {
           <h3>calculator</h3>A calculator built with React. Built to have a
           similar vibe to the one on your phone. Performs basic four functions
           and handles percents and negative numbers. Lorem ipsum dolor sit amet,
-   
           <br></br>
           <a href="https://simplecalculator-7d4924.netlify.app/" target="blank">
             <button class="button-52">Live Site</button>
