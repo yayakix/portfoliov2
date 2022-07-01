@@ -85,6 +85,7 @@ button a{
  .aboutme{
      display: flex;
      justify-content: center;
+     margin: 0;
   
  }
 
@@ -96,7 +97,9 @@ button a{
  }
  .button-52{
      font-size: smaller;
-     width: 60px;
+     width: 50px;
      margin-bottom: 50px;
+     padding: 0;
+     margin: 0;
  }
 }

@@ -5,7 +5,7 @@ function Header() {
     <div className="header">
       <ul>
         <li>
-          <a class="active" href="#home">
+          <a class="active" href="#" id="hometab">
             Iyana Marquez
           </a>
         </li>

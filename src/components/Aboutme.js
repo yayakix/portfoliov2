@@ -19,9 +19,7 @@ function Aboutme() {
           <h3>Funky Shoes</h3>
           This app will show you shoes like no other.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisl
-          sem, mollis nec lobortis sit amet, volutpat sed tellus. Donec egestas
-          malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
-          vehicula eros tempus ac.
+          
           <br></br>
           <a href="https://funkyshoes.netlify.app/" target="blank">
             <button class="button-52">Live Site </button>
@@ -37,9 +35,7 @@ function Aboutme() {
           <h3>Instagram Clone</h3>
           A clone of the popular Instagram! I recreated the home and profile pages.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisl
-          sem, mollis nec lobortis sit amet, volutpat sed tellus. Donec egestas
-          malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
-          vehicula eros tempus ac.
+         
           <br></br>
           <a href="https://insta-clone33.herokuapp.com/" target="blank">
             <button class="button-52">Live site </button>
