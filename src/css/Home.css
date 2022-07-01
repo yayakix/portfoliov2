@@ -1,0 +1,14 @@
+.homepage{
+    height: 30vh;
+    background-color:#D3CEDF ;
+    margin: 50px 100px;
+    text-align: left;
+    padding: 40px;
+
+}
+.text{
+    padding-bottom: 30px;
+}
+.small{
+    font-size: medium;
+}

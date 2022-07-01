@@ -21,8 +21,16 @@ function Aboutme() {
           malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
           vehicula eros tempus ac.
           <br></br>
-          <button class="button-52">Live Site</button>
-          <button class="button-52">View Code</button>
+          <button class="button-52">
+            <a href="https://insta-clone33.herokuapp.com/" target="blank">
+              Live Site
+            </a>
+          </button>
+          <button class="button-52">
+            <a href="https://github.com/yayakix/instagram-clone" target="blank">
+              View Code
+            </a>
+          </button>
         </p>
         <p>
           <h3>I learned</h3>
@@ -31,8 +39,16 @@ function Aboutme() {
           malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
           vehicula eros tempus ac.
           <br></br>
-          <button class="button-52">Live Site</button>
-          <button class="button-52">View Code</button>
+          <button class="button-52">
+            <a href="https://insta-clone33.herokuapp.com/" target="blank">
+              Live Site
+            </a>
+          </button>
+          <button class="button-52">
+            <a href="https://github.com/yayakix/instagram-clone" target="blank">
+              View Code
+            </a>
+          </button>
         </p>
         <p>
           <h3>My education</h3>
@@ -41,8 +57,16 @@ function Aboutme() {
           malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
           vehicula eros tempus ac.
           <br></br>
-          <button class="button-52">Live Site</button>
-          <button class="button-52">View Code</button>
+          <button class="button-52">
+            <a href="https://insta-clone33.herokuapp.com/" target="blank">
+              Live Site
+            </a>
+          </button>
+          <button class="button-52">
+            <a href="https://github.com/yayakix/instagram-clone" target="blank">
+              View Code
+            </a>
+          </button>
         </p>
       </div>
     </div>

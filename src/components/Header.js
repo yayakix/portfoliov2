@@ -1,4 +1,4 @@
-import '../css/Header.css'
+import "../css/Header.css";
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
             IM
           </a>
         </li>
-        <div className='bottomnav'>
+        <div className="bottomnav">
           <li>
             <a href="#news">Projects</a>
           </li>
