@@ -1,23 +1,30 @@
 .homepage{
-    height: 30vh;
+    height: 70vh;
     background-color:#D3CEDF ;
-    margin: 0px 100px;
+    /* margin: 0px 100px; */
     text-align: left;
-    padding: 40px;
+    padding: 40px 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
 
 }
 .text{
     padding-bottom: 30px;
+    font-size: 40px;
 }
 .small{
-    font-size: medium;
+    font-size: 20px;
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     .homepage{
         height: 40vh;
-        font-size: small;
+    }
+    .text{
+        font-size: 20px;
     }
 
 }

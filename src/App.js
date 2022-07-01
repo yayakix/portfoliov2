@@ -10,7 +10,9 @@ function App() {
     <div className="App">
       <Header />
       <Home />
-      <h3>Check out my recent work</h3>
+      <h3 className="projectintro" id="projects">
+        Here are some things i've built
+      </h3>
 
       <Aboutme />
 

@@ -6,12 +6,12 @@ function Header() {
       <ul>
         <li>
           <a class="active" href="#home">
-            IM
+            Iyana Marquez
           </a>
         </li>
         <div className="bottomnav">
           <li>
-            <a href="#news">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
             <a href="#contact">About</a>
