@@ -102,7 +102,7 @@ button a{
  img{
      max-width: 150px;
       max-height: 200px;
-      margin: 25px 0px 25px 0px;
+      margin: 50px 0px 100px 0px;
 
  }
  .button-52{
@@ -122,6 +122,9 @@ white-space: break-spaces;
  }
  .rightsection{
      margin-top: 75px;
+ }
+ .leftsection{
+margin-top: 10px;
  }
 }
 
