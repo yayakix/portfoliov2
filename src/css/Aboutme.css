@@ -101,8 +101,8 @@ button a{
 
  img{
      max-width: 200px;
-      max-height: 250px;
-      margin: 0px 10px 20px 0px;
+      max-height: 300px;
+      margin: 25px 0px 25px 0px;
 
  }
  .button-52{
@@ -113,12 +113,15 @@ button a{
      margin: 0;
  }
  p{
-     height: 300px;
-     margin: 0px 0px;
+     height: 350px;
+     margin: 0px 0px 0px 0px;
 white-space: break-spaces;
   width: 300px; 
   overflow: hidden;
   text-overflow: ellipsis; 
+ }
+ .rightsection{
+     margin-top: 75px;
  }
 }
 
