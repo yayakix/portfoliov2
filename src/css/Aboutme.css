@@ -116,7 +116,7 @@ button a{
      height: 300px;
      margin: 0px 0px;
 white-space: break-spaces;
-  width: 490px; 
+  width: 300px; 
   overflow: hidden;
   text-overflow: ellipsis; 
  }
