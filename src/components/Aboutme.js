@@ -48,9 +48,7 @@ function Aboutme() {
           <h3>calculator</h3>A calculator built with React. Built to have a
           similar vibe to the one on your phone. Performs basic four functions
           and handles percents and negative numbers. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Nunc nisl sem, mollis nec lobortis sit
-          amet, volutpat sed tellus. Donec egestas malesuada turpis a malesuada.
-          Aenean auctor ultrices nibh, nec vehicula eros tempus ac.
+   
           <br></br>
           <a href="https://simplecalculator-7d4924.netlify.app/" target="blank">
             <button class="button-52">Live Site</button>
