@@ -113,9 +113,9 @@ button a{
      margin: 0;
  }
  p{
-     height: 250px;
-     margin: 20px 0px;
-    white-space: pre-wrap; 
+     height: 300px;
+     margin: 0px 0px;
+white-space: break-spaces;
   width: 490px; 
   overflow: hidden;
   text-overflow: ellipsis; 
