@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Home />
+      <h3>Check out my recent work</h3>
 
       <Aboutme />
 

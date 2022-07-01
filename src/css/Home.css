@@ -1,7 +1,7 @@
 .homepage{
     height: 30vh;
     background-color:#D3CEDF ;
-    margin: 50px 100px;
+    margin: 0px 100px;
     text-align: left;
     padding: 40px;
 
@@ -11,4 +11,13 @@
 }
 .small{
     font-size: medium;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .homepage{
+        height: 40vh;
+        font-size: small;
+    }
+
 }

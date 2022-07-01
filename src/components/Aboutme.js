@@ -21,16 +21,12 @@ function Aboutme() {
           malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
           vehicula eros tempus ac.
           <br></br>
-          <button class="button-52">
-            <a href="https://insta-clone33.herokuapp.com/" target="blank">
-              Live Site
-            </a>
-          </button>
-          <button class="button-52">
-            <a href="https://github.com/yayakix/instagram-clone" target="blank">
-              View Code
-            </a>
-          </button>
+          <a href="https://insta-clone33.herokuapp.com/" target="blank">
+            <button class="button-52">Live site </button>
+          </a>
+          <a href="https://github.com/yayakix/instagram-clone" target="blank">
+            <button class="button-52">View Code </button>
+          </a>
         </p>
         <p>
           <h3>I learned</h3>
@@ -39,16 +35,12 @@ function Aboutme() {
           malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
           vehicula eros tempus ac.
           <br></br>
-          <button class="button-52">
-            <a href="https://insta-clone33.herokuapp.com/" target="blank">
-              Live Site
-            </a>
-          </button>
-          <button class="button-52">
-            <a href="https://github.com/yayakix/instagram-clone" target="blank">
-              View Code
-            </a>
-          </button>
+          <a href="https://simplecalculator-7d4924.netlify.app/" target="blank">
+            <button class="button-52">Live Site</button>
+          </a>
+          <a href="https://github.com/yayakix/calculator-react" target="blank">
+            <button class="button-52">View Code </button>
+          </a>
         </p>
         <p>
           <h3>My education</h3>
@@ -57,16 +49,12 @@ function Aboutme() {
           malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
           vehicula eros tempus ac.
           <br></br>
-          <button class="button-52">
-            <a href="https://insta-clone33.herokuapp.com/" target="blank">
-              Live Site
-            </a>
-          </button>
-          <button class="button-52">
-            <a href="https://github.com/yayakix/instagram-clone" target="blank">
-              View Code
-            </a>
-          </button>
+          <a href="https://simonsaysgame23422.netlify.app/" target="blank">
+            <button class="button-52">Live Site </button>
+          </a>
+          <a href="https://github.com/yayakix/simonsays" target="blank">
+            <button class="button-52">View Code</button>
+          </a>
         </p>
       </div>
     </div>
