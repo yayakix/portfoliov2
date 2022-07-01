@@ -14,10 +14,13 @@ function Header() {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#about">Resume</a>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
           </li>
         </div>
       </ul>

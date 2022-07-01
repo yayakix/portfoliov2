@@ -17,9 +17,10 @@ function Aboutme() {
       <div className="rightsection">
         <p>
           <h3>Funky Shoes</h3>
-          This app will show you shoes like no other.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisl
-          
+          This app will show you shoes like no other. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Nunc nisl llis nec lobortis sit
+          amet, volutpat sed tellus. Donec egestas malesuada turpis a malesuada.
+          Aenean auctor ultrices nibh, nec vehicula eros tempus ac.
           <br></br>
           <a href="https://funkyshoes.netlify.app/" target="blank">
             <button class="button-52">Live Site </button>
@@ -32,10 +33,9 @@ function Aboutme() {
           </a>
         </p>
         <p>
-          <h3>Instagram Clone</h3>
-          A clone of the popular Instagram! I recreated the home and profile pages.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisl
-         
+          <h3>Instagram Clone</h3>A clone of the popular Instagram! I recreated
+          the home and profile pages. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nunc nisl
           <br></br>
           <a href="https://insta-clone33.herokuapp.com/" target="blank">
             <button class="button-52">Live site </button>
@@ -45,13 +45,12 @@ function Aboutme() {
           </a>
         </p>
         <p>
-          <h3>calculator</h3>
-          A calculator built with React. Built to have a similar vibe to the one on your phone. Performs
-          basic four functions and handles percents and negative numbers.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisl
-          sem, mollis nec lobortis sit amet, volutpat sed tellus. Donec egestas
-          malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
-          vehicula eros tempus ac.
+          <h3>calculator</h3>A calculator built with React. Built to have a
+          similar vibe to the one on your phone. Performs basic four functions
+          and handles percents and negative numbers. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nunc nisl sem, mollis nec lobortis sit
+          amet, volutpat sed tellus. Donec egestas malesuada turpis a malesuada.
+          Aenean auctor ultrices nibh, nec vehicula eros tempus ac.
           <br></br>
           <a href="https://simplecalculator-7d4924.netlify.app/" target="blank">
             <button class="button-52">Live Site</button>

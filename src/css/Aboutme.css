@@ -78,7 +78,7 @@ button a{
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
      .button-52 {
     padding: 13px 50px 13px;
   }
