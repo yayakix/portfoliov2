@@ -1,6 +1,8 @@
 import "../css/Footer.css";
 
 function Footer() {
+    const d = new Date()
+    const year = d.getFullYear()
   return (
     <div className="footer">
       <h3 className="connect">LET'S CONNECT</h3>
@@ -11,6 +13,7 @@ function Footer() {
       <h4>
         <a href="https://github.com/yayakix">GITHUB</a>{" "}
       </h4>
+      <span className="copyright">&copy; Iyana Marquez {year} </span>
     </div>
   );
 }

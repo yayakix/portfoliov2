@@ -1,8 +1,29 @@
 .footer{
-    background-color: antiquewhite;
+    background-color: #D3CEDF;
     text-align: left;
-    padding: 50px;
+    height: 50vh;
+    font-size: 30px;
+    padding: 120px 90px;
+    
 }
 .connect{
     margin-bottom: 20px;
+    font-size: 15px;
+}
+.copyright{
+    display: flex;
+    align-items: flex-end;
+    font-size: small;
+    position: absolute;
+    margin-top: 60px;
+}
+h4{
+    margin-top: 20px;
+}
+h4 a{
+    text-decoration: none;
+    color: #9CB4CC;
+}
+h4 a:hover{
+    text-decoration:line-through
 }
