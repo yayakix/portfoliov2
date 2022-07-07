@@ -2,19 +2,23 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Aboutme from "./components/Aboutme";
+import Projects from "./components/Projects";
 import Home from "./components/Home";
+import About from "./components/About";
+import Technologies from "./components/Technologies";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Home />
-      <h3 className="projectintro" id="projects">
-        Here are some things i've built
-      </h3>
 
-      <Aboutme />
+      <About />
+      <h3 className="projectintro" id="projects">
+        Projects
+      </h3>
+      <Projects />
+      <Technologies />
 
       <Footer />
     </div>

@@ -1,6 +1,6 @@
-import "../css/Aboutme.css";
+import "../css/Projects.css";
 
-function Aboutme() {
+function Projects() {
 
   return (
     <div className="aboutme">
@@ -79,4 +79,4 @@ function Aboutme() {
   );
 }
 
-export default Aboutme;
+export default Projects;
