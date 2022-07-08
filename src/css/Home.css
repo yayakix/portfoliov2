@@ -1,19 +1,23 @@
 .homepage{
     height: 80vh;
     /* background-color:#F2D7D9 ; */
-    text-align: left;
-    padding: 40px 150px;
+    text-align: center;
+    padding: 30px 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 100px;
     margin-top: 70px;
-    display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
 
+}
+.spectext{
+    animation: color-change 8s infinite;
+}
+@keyframes color-change {
+  0% { color: #EB5353; }
+  25% { color: #F9D923; }
+  50% { color: #36AE7C; }
+  75% { color: #187498; }
+  100% { color: #EB5353; }
 }
 .hand{
      animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -32,49 +36,46 @@ grid-row-gap: 0px;
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
-.text{
-   
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
 
 
 
 .lefthome {
     text-align: center;
+    padding: 10px;
     /* background-color: aqua; */
-        grid-area: 1 / 1 / 2 / 2;
-        display: grid;
+      
 
             animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-
 }
-.lefthome .text{
-    display: flex;
-    align-items: center;
+.text{
+    
     font-family: 'Edu SA Beginner', cursive;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #3797A4;
     margin-top: 0px;
     padding-top: 0px;
 }
 .lefthome p{
     font-size: larger;
+    margin-top: 10px;
 }
 .righthome{
-    grid-area: 1 / 2 / 2 / 3;
         animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
+
 }
 .righthome img{
-    border-radius: 50%;
     height: fit-content;
+    padding: 20px;
 
+}
+.homepage p{
+    text-align: center;
+    margin-top: 10px;
 }
   
 @keyframes fadeInAnimation {
