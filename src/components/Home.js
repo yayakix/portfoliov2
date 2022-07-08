@@ -10,7 +10,7 @@ function Home() {
           Hi. I'm Iyana<span className="hand">👋🏽</span>
         </h1>
         <p>
-          Im a <span className="spectext">Frontend</span> Developer
+          Im a <span className="spectext"> Frontend </span> Developer
         </p>
       </div>
 
