@@ -14,9 +14,7 @@ function App() {
       <Home />
 
       <About />
-      <h2 className="projectintro" id="projects">
-        Projects
-      </h2>
+     
       <Projects />
       <Technologies />
 

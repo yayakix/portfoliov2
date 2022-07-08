@@ -4,6 +4,9 @@ function Projects() {
 
   return (
     <div className="aboutme">
+      <h2 className="projectintro" id="projects">
+        Projects
+      </h2>
       <div className="container">
         <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
         <p>
@@ -13,6 +16,8 @@ function Projects() {
           amet, volutpat sed tellus. Donec egestas malesuada turpis a malesuada.
           Aenean auctor ultrices nibh, nec vehicula eros tempus ac.
           <br></br>
+        </p>
+        <div className="buttoncontainer">
           <a href="https://funkyshoes.netlify.app/" target="blank">
             <button class="button-52">Live Site </button>
           </a>
@@ -22,7 +27,7 @@ function Projects() {
           >
             <button class="button-52">View Code</button>
           </a>
-        </p>
+        </div>
       </div>
 
       <div className="container">
@@ -32,13 +37,15 @@ function Projects() {
           the home and profile pages. Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Nunc nislLorem ipsum dolor sit amet, consectetur
           <br></br>
+        </p>
+        <div className="buttoncontainer">
           <a href="https://insta-clone33.herokuapp.com/" target="blank">
             <button class="button-52">Live site </button>
           </a>
           <a href="https://github.com/yayakix/instagram-clone" target="blank">
             <button class="button-52">View Code </button>
           </a>
-        </p>
+        </div>
       </div>
 
       <div className="container">
@@ -48,13 +55,15 @@ function Projects() {
           similar vibe to the one on your phone. Performs basic four functions
           and handles percents and negative numbers. Lorem ipsum dolor sit amet,
           <br></br>
+        </p>
+        <div className="buttoncontainer">
           <a href="https://simplecalculator-7d4924.netlify.app/" target="blank">
             <button class="button-52">Live Site</button>
           </a>
           <a href="https://github.com/yayakix/calculator-react" target="blank">
             <button class="button-52">View Code </button>
           </a>
-        </p>
+        </div>
       </div>
 
       <div className="container">
@@ -66,15 +75,16 @@ function Projects() {
           malesuada turpis a malesuada. Aenean auctor ultrices nibh, nec
           vehicula eros tempus ac.
           <br></br>
+        </p>
+        <div className="buttoncontainer">
           <a href="https://simonsaysgame23422.netlify.app/" target="blank">
             <button class="button-52">Live Site </button>
           </a>
           <a href="https://github.com/yayakix/simonsays" target="blank">
             <button class="button-52">View Code</button>
           </a>
-        </p>
+        </div>
       </div>
-
     </div>
   );
 }
