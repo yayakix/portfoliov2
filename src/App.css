@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+h2{
+  text-align: center;
+}
+#projects{
+  text-align: center;
 }
 
 .App-logo {

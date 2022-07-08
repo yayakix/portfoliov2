@@ -1,14 +1,20 @@
 .aboutmetitle{
-    text-align: left;
+    text-align: center;
 }
 .about p{
     display: flex;
     justify-content: center;
     font-size: larger;
+          position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
     
 }
 .about {
     background-color: #D0E8F2;
     height: 100vh;
-    padding: 150px;
+    padding: 50px;
+    position: relative;
 }
