@@ -1,5 +1,5 @@
 .homepage{
-    height: 80vh;
+    height: 90vh;
     /* background-color:#F2D7D9 ; */
     text-align: center;
     padding: 30px 10px;
@@ -110,6 +110,7 @@
         margin-top: 70px;
 
         padding: 0px;
+        height: 100vh;
     }
     .lefthome{
         text-align: center;
