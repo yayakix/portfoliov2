@@ -1,6 +1,6 @@
 .homepage{
-    height: 70vh;
-    background-color:#F2D7D9 ;
+    height: 80vh;
+    /* background-color:#F2D7D9 ; */
     text-align: left;
     padding: 40px 150px;
     display: flex;
@@ -15,18 +15,33 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 
 }
+.hand{
+     animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;  
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
 .text{
    
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-.small{
-    font-size: 20px;
-}
+
 
 
 .lefthome {
+    /* background-color: aqua; */
         grid-area: 1 / 1 / 2 / 2;
         display: grid;
         justify-content: center;
@@ -36,6 +51,16 @@ grid-row-gap: 0px;
     animation-fill-mode: forwards;
 
 }
+.lefthome .text{
+    display: flex;
+    align-items: center;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 6rem;
+    color: #A7C5EB;
+}
+.lefthome p{
+    font-size: larger;
+}
 .righthome{
     grid-area: 1 / 2 / 2 / 3;
         animation: fadeInAnimation ease 4s;
@@ -44,7 +69,8 @@ grid-row-gap: 0px;
 
 }
 .righthome img{
-    border: 50%;
+    border-radius: 50%;
+    height: fit-content;
 
 }
   

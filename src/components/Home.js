@@ -7,13 +7,13 @@ function Home() {
     <div className="homepage">
       <div className="lefthome">
         <h1 className="text" id="home">
-          Hi. I'm Iyana
+          Hi. I'm Iyana<span className="hand">👋🏽</span>
         </h1>
         <p>Im a frontend developer</p>
       </div>
 
       <div className="righthome">
-        <img src="../../src/mepic.PNG" />
+        <img src="https://i.imgur.com/x7wCu69.jpg" />
       </div>
     </div>
   );

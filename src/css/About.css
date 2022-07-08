@@ -1,0 +1,17 @@
+.aboutmetitle{
+    text-align: left;
+    margin: 50px;
+}
+.about p{
+    margin: 0px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    
+}
+.about {
+    background-color: #D0E8F2;
+    height: 50vh;
+    margin-bottom: 50px;
+    padding: 50px;
+}

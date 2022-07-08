@@ -14,9 +14,9 @@ function App() {
       <Home />
 
       <About />
-      <h3 className="projectintro" id="projects">
+      <h2 className="projectintro" id="projects">
         Projects
-      </h3>
+      </h2>
       <Projects />
       <Technologies />
 
