@@ -1,8 +1,13 @@
 .tech{
     background-color: #D0E8F2;
     height: 100vh;
-    padding: 20px;
     position: relative;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+  
     
 }
 .techimage{
@@ -10,12 +15,7 @@
 }
 .techcontainer{
 
-          position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-    
+grid-area: 2 / 1 / 4 / 2;
  
 }
 .techtitle{
@@ -23,6 +23,7 @@
     padding: 50px;
     font-size: 25px;
     color: black;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .techcontainer img{
@@ -58,6 +59,10 @@
         max-height: 50px;
 
 
+    }
+    .techtitle{
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
 

@@ -42,10 +42,10 @@ grid-row-gap: 0px;
 
 
 .lefthome {
+    text-align: center;
     /* background-color: aqua; */
         grid-area: 1 / 1 / 2 / 2;
         display: grid;
-        justify-content: center;
 
             animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
@@ -97,6 +97,7 @@ grid-row-gap: 0px;
         font-size: 50px;
     }
     .hand{
+        display: none;
         margin-left: 0;
     }
    
