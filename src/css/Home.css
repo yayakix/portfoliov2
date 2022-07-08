@@ -75,6 +75,7 @@
 .homepage p{
     text-align: center;
     margin-top: 10px;
+    font-size: 25px;
 }
   
 @keyframes fadeInAnimation {
@@ -116,12 +117,7 @@
         padding: 0px;
         margin-top: 25%;
     }
-    .lefthome p{
-       /* background-color: antiquewhite; */
-       /* display: flex;
-       justify-content: center; */
-       font-size: small;
-    }
+
     .spectext{
         padding-left: 1px;
         padding-right: 1px;
