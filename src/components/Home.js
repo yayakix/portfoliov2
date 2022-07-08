@@ -10,13 +10,13 @@ function Home() {
           Hi. I'm Iyana<span className="hand">👋🏽</span>
         </h1>
       </div>
+      <p>
+        Im a <span className="spectext"> Frontend </span> Developer
+      </p>
 
       <div className="righthome">
         <img src="https://i.imgur.com/x7wCu69.jpg" />
       </div>
-      <p>
-        Im a <span className="spectext"> Frontend </span> Developer
-      </p>
     </div>
   );
 }
