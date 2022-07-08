@@ -20,11 +20,11 @@
   100% { color: #EB5353; }
 }
 .hand{
-     animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+ animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s;        /* Change to speed up or slow down */
   animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;  
-  margin-left: 25px;
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
 }
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
@@ -36,7 +36,6 @@
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
-
 
 
 .lefthome {
@@ -102,7 +101,7 @@
         padding-left: 10px;
     }
     .hand{
-        display: none;
+        /* display: none; */
         margin-left: 0;
     }
     .homepage{
