@@ -11,7 +11,7 @@
 }
 .about {
     background-color: #D0E8F2;
-    height: 50vh;
+    height: fit-content;
     margin-bottom: 50px;
     padding: 50px;
 }

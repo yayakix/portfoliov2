@@ -92,8 +92,13 @@ grid-row-gap: 0px;
     .homepage{
         height: 40vh;
     }
-    .text{
-        font-size: 20px;
+    
+    .lefthome .text {
+        font-size: 50px;
     }
+    .hand{
+        margin-left: 0;
+    }
+   
 
 }
