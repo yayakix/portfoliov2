@@ -3,7 +3,7 @@ import "../css/Tech.css";
 function Technologies() {
   return (
     <div className="tech" id="tech">
-      <h2>Technologies</h2>
+      <h2 className="techtitle">Technologies</h2>
       <div className="techcontainer">
         <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
         <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />

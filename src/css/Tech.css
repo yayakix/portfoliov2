@@ -1,9 +1,22 @@
+.tech{
+    background-color: #F2D7D9;
+    height: 65vh;
+    
+}
 .techimage{
     max-width: 200px;
 }
 .techcontainer{
-   
-
+    display: inline-block;
+    align-items: center;
+    max-width: 50%;
+ 
+}
+.techtitle{
+    text-align: left;
+    padding: 50px;
+    font-size: 25px;
+    color: black;
 }
 
 .techcontainer img{
@@ -18,3 +31,29 @@
    transform: scale(1.05)
 
 }
+@media only screen and (max-width: 1580px) {
+  
+    .techcontainer {
+       max-width: 100%;
+
+
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 780px) {
+  
+    .techcontainer img{
+        max-width: 150px;
+        max-height: 70px;
+
+
+    }
+
+
+}
+
