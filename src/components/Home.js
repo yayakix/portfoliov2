@@ -9,7 +9,9 @@ function Home() {
         <h1 className="text" id="home">
           Hi. I'm Iyana<span className="hand">👋🏽</span>
         </h1>
-        <p>Im a frontend developer</p>
+        <p>
+          Im a <span className="spectext">Frontend</span> Developer
+        </p>
       </div>
 
       <div className="righthome">
