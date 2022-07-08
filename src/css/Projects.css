@@ -104,6 +104,22 @@ p{
         max-height: 150px;
 
     }
+    .container{
+        display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    }
+    .container img{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .container p{
+        grid-area: 2 / 1 / 4 / 2;
+    }
+.container a{
+    grid-area: 4 / 1 / 5 / 2;
+}
 
 
 }
