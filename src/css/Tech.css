@@ -1,15 +1,24 @@
 .tech{
     background-color: #D0E8F2;
-    height: 65vh;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
     
 }
 .techimage{
     max-width: 200px;
 }
 .techcontainer{
-    display: inline-block;
-    align-items: center;
-    max-width: 50%;
+   display: flex;
+            justify-content: center;
+            align-items: center;
+        flex-wrap: wrap;
+          position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+    
  
 }
 .techtitle{
@@ -20,12 +29,12 @@
 }
 
 .techcontainer img{
-     display: inline-block;
      padding: 5px;
      margin: 5px;
     max-width: 250px;
     max-height: 100px;
     transition: all .2s ease-in-out;
+    flex-wrap: wrap;
 }
 .techcontainer img:hover{
    transform: scale(1.05)
@@ -48,8 +57,8 @@
 @media only screen and (max-width: 780px) {
   
     .techcontainer img{
-        max-width: 150px;
-        max-height: 70px;
+        max-width: 120px;
+        max-height: 50px;
 
 
     }
