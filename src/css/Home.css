@@ -119,8 +119,8 @@ grid-row-gap: 0px;
     }
     .lefthome p{
        /* background-color: antiquewhite; */
-       display: flex;
-       justify-content: center;
+       /* display: flex;
+       justify-content: center; */
        font-size: small;
     }
     .spectext{
