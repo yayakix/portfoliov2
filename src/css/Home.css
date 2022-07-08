@@ -91,10 +91,15 @@ grid-row-gap: 0px;
 @media only screen and (max-width: 800px) {
     .homepage{
         height: 40vh;
+        display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
     }
     
     .lefthome .text {
-        font-size: 50px;
+        font-size: 40px;
     }
     .hand{
         display: none;
@@ -111,6 +116,15 @@ grid-row-gap: 0px;
     }
     .righthome img{
         padding: 0px;
+    }
+    .lefthome h1{
+        grid-area: 1 / 1 / 3 / 3;
+    }
+    .righthome{
+        grid-area: 1 / 3 / 3 / 5;
+    }
+    .lefthome p{
+        grid-area: 3 / 1 / 4 / 5;
     }
 
    
