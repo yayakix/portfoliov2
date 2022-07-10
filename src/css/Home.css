@@ -1,5 +1,5 @@
 .homepage{
-    height: 90vh;
+    height: 50vh;
     /* background-color:#F2D7D9 ; */
     text-align: center;
     padding: 30px 10px;
@@ -68,7 +68,7 @@
 
 }
 .righthome img{
-    height: fit-content;
+    max-width: 300px;
     padding: 20px;
 
 }

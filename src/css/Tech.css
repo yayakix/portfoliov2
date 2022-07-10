@@ -1,70 +1,8 @@
-.tech{
-    background-color: #D0E8F2;
-    height: 100vh;
-    position: relative;
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-  
-    
+.techpage{
+    background-color: bisque;
+    padding: 20px 0px 20px 0px;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.techimage{
-    max-width: 200px;
-}
-.techcontainer{
-
-grid-area: 2 / 1 / 4 / 2;
- 
-}
-.techtitle{
-    text-align: center;
-    padding: 50px;
-    font-size: 25px;
-    color: black;
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.techcontainer img{
-     padding: 5px;
-    max-width: 250px;
-    max-height: 100px;
-    transition: all .2s ease-in-out;
-       display: inline-block;
-        flex-wrap: wrap;
-}
-.techcontainer img:hover{
-   transform: scale(1.05)
-
-}
-@media only screen and (max-width: 1580px) {
-  
-    .techcontainer {
-       max-width: 100%;
-
-
-    }
-
-
-}
-
-
-
-
-@media only screen and (max-width: 780px) {
-  
-    .techcontainer img{
-        max-width: 120px;
-        max-height: 50px;
-
-
-    }
-    .techtitle{
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-
-
-}
-
