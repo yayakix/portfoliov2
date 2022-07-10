@@ -1,5 +1,6 @@
 .homepage img{
     width: 300px;
+    border-radius: 50%;
 }
 .homepage{
     margin-top: 10vh;
@@ -39,4 +40,8 @@
   50% { color: #7A86B6; }
   75% { color: #495C83; }
   100% { color: #9CB4CC; }
+}
+.homepage p{
+    font-size: 20px;
+    margin-top: 20px;
 }
