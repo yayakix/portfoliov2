@@ -81,7 +81,34 @@ function Technologies() {
             </div>
           </div>
           <div class="col">
-            {/* <div class="p-3 border bg-light">Row column</div> */}
+            <div class="p-3 border bg-light">
+              <i class="devicon-postgresql-plain"></i>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="devicon-heroku-original-wordmark"></i>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="devicon-git-plain-wordmark"></i>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="devicon-figma-plain"></i>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="devicon-canva-original"></i>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="devicon-typescript-plain"></i>
+            </div>
           </div>
         </div>
       </div>

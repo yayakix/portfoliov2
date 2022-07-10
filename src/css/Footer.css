@@ -1,7 +1,6 @@
 .footer{
     background-color: #748DA6;
     text-align: left;
-    height: 60vh;
     font-size: 30px;
     padding: 120px 90px;
   
@@ -36,7 +35,7 @@ h4 a:hover{
         padding-top: 60px;
     }
     .copyright{
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
 
