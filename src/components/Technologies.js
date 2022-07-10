@@ -36,34 +36,52 @@ function Technologies() {
             </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-django-plain-wordmark colored"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-express-original-wordmark colored"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-mongodb-plain-wordmark"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-nodejs-plain-wordmark"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-npm-original-wordmark"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-jquery-plain-wordmark"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-firebase-plain-wordmark"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-materialui-plain"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="p-3 border bg-light">
+              <i class="devicon-sass-original"></i>
+            </div>
           </div>
           <div class="col">
-            <div class="p-3 border bg-light">Row column</div>
+            {/* <div class="p-3 border bg-light">Row column</div> */}
           </div>
         </div>
       </div>
