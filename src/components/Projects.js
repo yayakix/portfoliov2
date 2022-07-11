@@ -69,7 +69,7 @@ function Projects() {
                 alt="calculator app"
               />
               <p>
-                <h3>calculator</h3>This is a calculator that performs simple
+                <h3>Calculator</h3>This is a calculator that performs simple
                 math operations. It performs the 4 basic operations in addition
                 to handling percents and negative numbers. This app was created
                 with functional components, state and hooks.
