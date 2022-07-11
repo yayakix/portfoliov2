@@ -14,11 +14,8 @@ function Projects() {
               <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
               <p>
                 <h3>Funky Shoes</h3>
-                This app will show you shoes like no other. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Nunc nisl llis nec
-                lobortis sit amet, volutpat sed tellus. Donec egestas malesuada
-                turpis a malesuada. Aenean auctor ultrices nibh, nec vehicula
-                eros tempus ac.
+                This app will show you shoes like no other. This is an ecommerce site built with React and Firebase. It has user authentication
+                that allows logged in users to add items their the cart and mimic the process of purchasing those items.
                 <br></br>
               </p>
               <div className="buttoncontainer">
@@ -39,9 +36,8 @@ function Projects() {
               <img src="https://images.unsplash.com/photo-1622929611233-bd6d58cbd4dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" />
               <p>
                 <h3>Instagram Clone</h3>A clone of the popular Instagram! I
-                recreated the home and profile pages. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Nunc nislLorem ipsum dolor
-                sit amet, consectetur
+                recreated the views for the home and profile pages of individual users. Users can sign up and post photos that are saved to their own accounts.
+                This is a fullstack application created with the MERN stack.
                 <br></br>
               </p>
               <div className="buttoncontainer">
