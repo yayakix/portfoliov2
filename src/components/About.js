@@ -6,11 +6,13 @@ function About() {
     <div className="about" id="about">
       <h2 className="aboutmetitle">About Me</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec mattis
-        arcu. Vivamus tempor lectus elit, vitae rutrum ipsum blandit a. Etiam ac
-        iaculis nisi. In hac habitasse platea dictumst. Mauris eu faucibus
-        purus. In molestie tempor imperdiet. Nulla magna tortor, fermentum in
-        vulputate pulvinar, tincidunt et quam.
+        Creative, detail-oriented, frontend software engineer with a deep
+        interest in solving problems with React. Proven track record of creating and
+        implementing successful front and back end web applications. I'm able to
+        quickly learn new tools and technologies and enjoy the process of
+        learning new things. I'm currently looking to bring my skills to a tech
+        company where I can create modern, responsive, and user-friendly
+        websites.
       </p>
     </div>
   );

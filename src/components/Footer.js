@@ -9,7 +9,10 @@ function Footer() {
       <h4>Iyana Marquez</h4>
       <h4>yayakix@gmail.com</h4>
       <h4>
-        <a href="https://www.linkedin.com/in/iyana-marquez/" target="_blank">
+        <a
+          href="https://drive.google.com/file/d/1jaLOPIvx7jQHdrIVUWMp1qkYHLgNCUOh/view?usp=sharing"
+          target="_blank"
+        >
           RESUME
         </a>
       </h4>

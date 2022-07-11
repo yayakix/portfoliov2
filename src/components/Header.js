@@ -3,7 +3,6 @@ import "../css/Header.css";
 function Header() {
   return (
     <div className="header">
-  
       <ul>
         <li>
           <a class="active" href="#" id="hometab">
@@ -22,7 +21,10 @@ function Header() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#resume" id="resume">
+            <a
+              href="https://drive.google.com/file/d/1jaLOPIvx7jQHdrIVUWMp1qkYHLgNCUOh/view?usp=sharing"
+              id="resume" target='_blank'
+            >
               Resume
             </a>
           </li>
