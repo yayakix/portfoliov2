@@ -70,7 +70,7 @@ function Projects() {
               />
               <p>
                 <h3>Calculator</h3>This is a calculator that performs simple
-                math operations. It performs the 4 basic operations in addition
+                math operations. It performs 4 basic operations, in addition
                 to handling percents and negative numbers. This app was created
                 with functional components, state and hooks.
                 <br></br>
