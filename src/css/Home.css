@@ -4,6 +4,7 @@
 }
 .homepage{
     margin-top: 18vh;
+    
 }
 .homeintro{
     display: flex;
@@ -31,13 +32,13 @@
   100% { transform: rotate( 0.0deg) }
 }
 .spectext {
-  animation: color-change 3s infinite;
+  animation: color-change 4s infinite;
 }
 
 @keyframes color-change {
   0% { color: #9CB4CC; }
   25% { color: #A8A4CE; }
-  50% { color: #7A86B6; }
+  50% { color: #EB4747; }
   75% { color: #495C83; }
   100% { color: #9CB4CC; }
 }
