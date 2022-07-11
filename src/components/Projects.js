@@ -85,10 +85,7 @@ function Projects() {
               <img src="https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
               <p>
                 <h3>Simon Says Game</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                nisl sem, mollis nec lobortis sit amet, volutpat sed tellus.
-                Donec egestas malesuada turpis a malesuada. Aenean auctor
-                ultrices nibh, nec vehicula eros tempus ac.
+                A pattern memory game. Press any key to start and correctly recreate the growing pattern of the game. If the pattern is guessed incorrectly the game will restart! How good is your memory?
                 <br></br>
               </p>
               <div className="buttoncontainer">
