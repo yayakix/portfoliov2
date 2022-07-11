@@ -1,6 +1,7 @@
 .projectspage img{
-  max-width: 300px;
-  max-height: 200px;
+  max-width: 360px;
+  height: 200px;
+  margin: 10px;
 }
 .projectspage{
   margin: 40px 0px 40px 0px;

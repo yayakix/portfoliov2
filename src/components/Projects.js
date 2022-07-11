@@ -1,7 +1,6 @@
 import "../css/Projects.css";
 
 function Projects() {
-
   return (
     <div className="projectspage">
       <h2 className="projectintro" id="projects">
@@ -11,11 +10,16 @@ function Projects() {
         <div class="row gy-5">
           <div class="col-sm-12 col-md-6 ">
             <div class="p-3 border bg-light">
-              <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/funkyshoes.png`}
+                alt="funky shoes app"
+              />
               <p>
                 <h3>Funky Shoes</h3>
-                This app will show you shoes like no other. This is an ecommerce site built with React and Firebase. It has user authentication
-                that allows logged in users to add items their the cart and mimic the process of purchasing those items.
+                This app will show you shoes like no other. This is an ecommerce
+                site built with React and Firebase. It has user authentication
+                that allows logged in users to add items their the cart and
+                mimic the process of purchasing those items.
                 <br></br>
               </p>
               <div className="buttoncontainer">
@@ -33,11 +37,16 @@ function Projects() {
           </div>
           <div class="col-sm-12 col-md-6">
             <div class="p-3 border bg-light">
-              <img src="https://images.unsplash.com/photo-1622929611233-bd6d58cbd4dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/igclone.png`}
+                alt="instagram clone"
+              />
               <p>
                 <h3>Instagram Clone</h3>A clone of the popular Instagram! I
-                recreated the views for the home and profile pages of individual users. Users can sign up and post photos that are saved to their own accounts.
-                This is a fullstack application created with the MERN stack.
+                recreated the views for the home and profile pages of individual
+                users. Users can sign up and post photos that are saved to their
+                own accounts. This is a fullstack application created with the
+                MERN stack.
                 <br></br>
               </p>
               <div className="buttoncontainer">
@@ -55,8 +64,10 @@ function Projects() {
           </div>
           <div class="col-sm-12 col-md-6 ">
             <div class="p-3 border bg-light">
-              {" "}
-              <img src="https://images.pexels.com/photos/6927334/pexels-photo-6927334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/calc.png`}
+                alt="calculator app"
+              />
               <p>
                 <h3>calculator</h3>This is a calculator that performs simple
                 math operations. It performs the 4 basic operations in addition
@@ -82,10 +93,15 @@ function Projects() {
           </div>
           <div class="col-sm-12 col-md-6 ">
             <div class="p-3 border bg-light">
-              <img src="https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/simonsays.png`}
+                alt="simon says game"
+              />
               <p>
-                <h3>Simon Says Game</h3>
-                A pattern memory game. Press any key to start and correctly recreate the growing pattern of the game. If the pattern is guessed incorrectly the game will restart! How good is your memory?
+                <h3>Simon Says Game</h3>A pattern memory game. Press any key to
+                start and correctly recreate the growing pattern of the game. If
+                the pattern is guessed incorrectly the game will restart! How
+                good is your memory?
                 <br></br>
               </p>
               <div className="buttoncontainer">
@@ -96,7 +112,9 @@ function Projects() {
                   <button class="button-52">Live Site </button>
                 </a>
                 <a href="https://github.com/yayakix/simonsays" target="blank">
-                  <button class="button-52">View Code</button>
+                  <button class="button-52" id="skills">
+                    View Code
+                  </button>
                 </a>
               </div>
             </div>

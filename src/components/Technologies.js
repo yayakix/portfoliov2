@@ -2,7 +2,7 @@ import "../css/Tech.css";
 
 function Technologies() {
   return (
-    <div className="techpage" id="tech">
+    <div className="techpage" id="skills">
       <h2 className="techtitle col-12">Technologies</h2>
       <div className="techcontainer container">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">

@@ -55,4 +55,7 @@ li{
 #resume{
   display: none;
 }
+li a{
+  font-size: small;
+}
 }

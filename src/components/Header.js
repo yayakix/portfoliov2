@@ -16,6 +16,9 @@ function Header() {
           <li>
             <a href="#projects">Projects</a>
           </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
 
           <li>
             <a href="#contact">Contact</a>
@@ -23,7 +26,9 @@ function Header() {
           <li>
             <a
               href="https://drive.google.com/file/d/1jaLOPIvx7jQHdrIVUWMp1qkYHLgNCUOh/view?usp=sharing"
-              id="resume" target='_blank'
+              id="resume"
+              target="_blank"
+              rel="noreferrer"
             >
               Resume
             </a>
