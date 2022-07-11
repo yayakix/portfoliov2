@@ -14,7 +14,7 @@
     background-color: #C9BBCF;
     padding: 50px;
     display: flexbox;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-bottom: 40px;
 }
 
@@ -24,6 +24,9 @@
       font-size: small;
       margin: 0;
       padding: 0;
+  }
+  .about{
+      margin-top: 30px;
   }
 
 
