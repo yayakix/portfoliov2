@@ -51,18 +51,19 @@ function Home() {
             <div class="flex flex-wrap justify-center">
               <div class="w-full px-4">
                 <p class="font-light leading-relaxed text-slate-600 mb-4">
-                  Creative, detail-oriented, developer with a
-                  deep interest in solving common problems. Proven track
-                  record of creating and implementing successful front and back
-                  end web applications. I'm able to quickly pick up new technologies and enjoy the process of learning new things. I'm
-                  currently looking to bring my skills to a tech company where I
-                  can create modern, responsive, and user-friendly websites.
+                  Creative, detail-oriented, developer with a deep interest in
+                  solving common problems. Proven track record of creating and
+                  implementing successful front and back end web applications.
+                  I'm able to quickly pick up new technologies and enjoy the
+                  process of learning new things. I'm currently looking to bring
+                  my skills to a tech company where I can create modern,
+                  responsive, and user-friendly websites.
                 </p>
                 <a
-                  href="javascript:;"
+                  href="#projects"
                   class="font-normal text-slate-700 hover:text-slate-400"
                 >
-                  Learn More About Me
+                  See My Work ⬇
                 </a>
               </div>
             </div>
