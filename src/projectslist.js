@@ -41,12 +41,12 @@ export default [
     livelink: "https://simonsaysgame23422.netlify.app/",
     codelink: "https://github.com/yayakix/simonsays",
   },
-  // {
-  //   id: 5,
-  //   title: "ig clone",
-  //   img: ``,
-  //   description: "blah blah",
-  //   livelink: "a link",
-  //   codelink: "another link",
-  // },
+  {
+    id: 5,
+    title: "Aqua Crafts",
+    img: `${process.env.PUBLIC_URL}/images/aquacraft.png`,
+    description: "An ecommerce site I built for a local business owner. Uses Firebase and Firestore for login and storage. It utilizes the Stripe API to process payments. ",
+    livelink: "a link",
+    codelink: "another link",
+  },
 ];
