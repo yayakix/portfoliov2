@@ -16,12 +16,12 @@ function Projects() {
             <p class="text-gray-700 text-base flex-1">{x.description} </p>
 
             <div class="px-6 pt-4 pb-2">
-              <a>
+              <a href={x.livelink}>
                 <button class="inline-block bg-sky-500 hover:bg-sky-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                   Live Link
                 </button>
               </a>
-              <a>
+              <a href={x.codelink}>
                 <button class="inline-block bg-sky-500 hover:bg-sky-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                   See Code
                 </button>
