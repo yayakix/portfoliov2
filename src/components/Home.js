@@ -2,7 +2,7 @@ import "../css/Home.css";
 
 function Home() {
   return (
-    <div class="">
+    <div className="mb-10">
       <div
         class="relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16"
         id="about"
@@ -21,12 +21,12 @@ function Home() {
               <div class="flex justify-center lg:pt-4 pt-8 pb-0">
                 <div class="p-3 text-center">
                   <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">
-                    Web Developer
+                    Software Engineer
                   </span>
                 </div>
                 <div class="p-3 text-center">
                   <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">
-                    Software Engineer
+                    Web Developer
                   </span>
                 </div>
 

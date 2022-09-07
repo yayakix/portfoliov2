@@ -10,7 +10,7 @@ function Footer() {
       {/* <h4>yayakix@gmail.com</h4> */}
       <h4>
         <a
-          href="https://drive.google.com/file/d/1jaLOPIvx7jQHdrIVUWMp1qkYHLgNCUOh/view?usp=sharing"
+          href="https://docs.google.com/document/d/10DHq4Xq6HKmtkbnLC8-JJA_4nqbkPZ-RNV2bcQ6QnhQ/edit?usp=sharing"
           target="_blank"
         >
           RESUME

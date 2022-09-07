@@ -9,7 +9,7 @@ function Projects() {
       </h2>
       <div className="space-y-10 lg:columns-2 md:columns-1 flex row">
         {projectslist.map((x) => (
-          <div class="max-w-lg rounded overflow-hidden shadow-lg flex flex-col">
+          <div class="max-w-md rounded overflow-hidden shadow-lg flex flex-col">
             <img class="h-4/5" src={x.img} alt={x.title} />
 
             <div class="font-bold text-xl mb-2">{x.title}</div>

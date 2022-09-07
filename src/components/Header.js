@@ -2,7 +2,7 @@ import "../css/Header.css";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header text-center">
       <ul>
         <li>
           <a class="active" href="#" id="hometab">
