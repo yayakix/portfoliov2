@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="footer" id="contact">
       <h3 className="connect">LET'S CONNECT</h3>
-      {/* <h4>Iyana Marquez</h4> */}
+      <h4>Iyana Marquez</h4>
       {/* <h4>yayakix@gmail.com</h4> */}
       <h4>
         <a
