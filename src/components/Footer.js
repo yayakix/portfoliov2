@@ -1,8 +1,8 @@
 import "../css/Footer.css";
 
 function Footer() {
-    const d = new Date()
-    const year = d.getFullYear()
+  const d = new Date();
+  const year = d.getFullYear();
   return (
     <footer className="footer">
       <span className="foottitle text-center">Lets Connect.</span>
@@ -30,7 +30,6 @@ function Footer() {
 
       <span className="copyright ">&copy; Iyana Marquez {year} </span>
     </footer>
-    // sep
   );
 }
 
