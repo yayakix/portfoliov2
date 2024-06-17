@@ -1,5 +1,6 @@
 import "../css/Home.css";
 import AnimationComponent from "./TypeAnimation.tsx";
+import { useSpring, animated } from "@react-spring/web";
 
 function Home() {
   const titlesList = [
@@ -10,6 +11,11 @@ function Home() {
       text: "Software Developer",
     },
   ];
+  const springs = useSpring({
+    from: { x: 500, opacity: 0 },
+    to: { x: 0, opacity: 1 },
+    delay: 500,
+  });
   return (
     <div
       className="px-2 sm:px-6 relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16 my-10 text-sm sm:text-xl"
@@ -48,15 +54,22 @@ function Home() {
       <div className="mt-4 p-2 sm:p-10 border-t border-slate-200 text-center">
         <div className="flex flex-wrap justify-center">
           <div className="w-full ">
-            <p className="font-light leading-relaxed text-slate-600 mb-4">
-              Creative, detail-oriented, developer with a deep interest in
-              solving common problems. Proven track record of creating and
-              implementing successful front and back end web applications. I'm
-              able to quickly pick up new technologies and enjoy the process of
-              learning new things. I'm currently looking to bring my skills to a
-              tech company where I can create modern, responsive, and
-              user-friendly websites.
-            </p>
+            <animated.div
+              style={{
+                ...springs,
+              }}
+            >
+              <p className="font-light leading-relaxed text-slate-600 mb-4">
+                Creative, detail-oriented, developer with a deep interest in
+                solving common problems. Proven track record of creating and
+                implementing successful front and back end web applications. I'm
+                able to quickly pick up new technologies and enjoy the process
+                of learning new things. I'm currently looking to bring my skills
+                to a tech company where I can create modern, responsive, and
+                user-friendly websites.
+              </p>
+            </animated.div>
+
             <a
               href="#projects"
               className="font-normal text-slate-700 hover:text-slate-400"

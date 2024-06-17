@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Home from "./components/Home";
 import Technologies from "./components/Technologies";
 
+import Test from "./components/Test.tsx";
 function App() {
   return (
     <div className="App w-full">

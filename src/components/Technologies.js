@@ -1,6 +1,13 @@
 import "../css/Tech.css";
+import { useSpring, animated } from "@react-spring/web";
+import { motion, useTime, useTransform } from "framer-motion";
+import { useState } from "react";
 
 function Technologies() {
+  const [hovered, setHovered] = useState(false);
+  const time = useTime();
+  const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
+
   const iconList = [
     { id: 0, icon: "devicon-react-original-wordmark" },
     { id: 1, icon: "devicon-javascript-plain" },
@@ -35,13 +42,20 @@ function Technologies() {
         </h2>
         <div class="flex-grow border-t border-gray-400"></div>
       </div>
+
       <div className="techcontainer container p-2 md:p-10">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
           {iconList.map((icon) => {
             return (
               <div class="col">
                 <div class="col p-3 border bg-light">
-                  <i class={icon.icon}></i>
+                  <motion.div style={hovered ? { rotate: rotate } : {}}>
+                    <i
+                      onMouseEnter={() => setHovered(true)}
+                      onMouseLeave={() => setHovered(false)}
+                      class={icon.icon}
+                    ></i>
+                  </motion.div>
                 </div>
               </div>
             );
