@@ -6,10 +6,9 @@ import Projects from "./components/Projects";
 import Home from "./components/Home";
 import Technologies from "./components/Technologies";
 
-import Test from "./components/Test.tsx";
 function App() {
   return (
-    <div className="App w-full">
+    <div className="App w-full dark:bg-black dark:text-white">
       <Header />
       <div className="mx-4 md:mx-10">
         <Home />

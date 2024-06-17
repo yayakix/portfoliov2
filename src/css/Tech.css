@@ -1,12 +1,23 @@
 .techpage {
-  background-color: #daeaf1;
+  /* background-color: #daeaf1; */
+  @media (prefers-color-scheme: dark) {
+    /* background-color: rgb(15 23 42); */
+  }
 }
 .techpage i {
   font-size: 50px;
+  /* @media (prefers-color-scheme: dark) {
+    color: white;
+    background-color: black;
+  } */
 }
 .techpage i:hover {
-  color: white;
+  /* color: white;
   background-color: black;
+  @media (prefers-color-scheme: dark) {
+    color: black;
+    background-color: white;
+  } */
 }
 .techtitle {
   font-size: xx-large;
