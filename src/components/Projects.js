@@ -3,7 +3,7 @@ import projectslist from "../projectslist";
 
 function Projects() {
   return (
-    <div className="mt-36">
+    <div className="my-36">
       <div className="flex justify-center items-center mb-20 ">
         <div class="flex-grow border-t border-gray-400"></div>
         <h2
@@ -15,9 +15,9 @@ function Projects() {
         <div class="flex-grow border-t border-gray-400"></div>
       </div>
 
-      <div className="space-y-10 lg:columns-2 md:columns-1 flex row">
+      <div className="grid md:grid-cols-2 space-y-10 lg:columns-2 md:columns-1 flex row">
         {projectslist.map((x) => (
-          <div className="max-w-md overflow-hidden shadow-lg flex flex-col">
+          <div className="max-w-md overflow-hidden shadow-lg flex flex-col gap-2">
             <img className="h-4/5 rounded-b-lg" src={x.img} alt={x.title} />
 
             <div className="font-bold text-xl mb-2">{x.title}</div>

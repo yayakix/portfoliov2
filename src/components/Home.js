@@ -1,4 +1,5 @@
 import "../css/Home.css";
+import AnimationComponent from "./TypeAnimation.tsx";
 
 function Home() {
   const titlesList = [
@@ -22,7 +23,9 @@ function Home() {
           />
         </div>
         <div className="flex justify-center mt-24 ">
-          {titlesList.map((item) => {
+          <AnimationComponent />
+
+          {/* {titlesList.map((item) => {
             return (
               <div className="m-2 text-center">
                 <span className="text-xl font-bold block uppercase tracking-wide text-slate-700">
@@ -30,7 +33,7 @@ function Home() {
                 </span>
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
       <div className="text-center mt-2">

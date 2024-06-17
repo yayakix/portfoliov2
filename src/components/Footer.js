@@ -19,8 +19,8 @@ function Footer() {
     },
   ];
   return (
-    <footer className="footer text-2xl p-4 h-96 ">
-      <div className="flex justify-center items-center mb-20 mt-10">
+    <footer className="footer text-2xl p-4   ">
+      <div className="flex justify-center items-center my-10 ">
         <div class="flex-grow border-t border-gray-400"></div>
         <h2
           className=" text-white flex justify-center mx-4	text-3xl"
@@ -31,7 +31,7 @@ function Footer() {
         <div class="flex-grow border-t border-gray-400"></div>
       </div>
 
-      <div className="group flex justify-center items-center h-20 ">
+      <div className="group flex flex-col md:flex-row justify-center items-center mb-10">
         {linkList.map((item) => {
           return (
             <a
