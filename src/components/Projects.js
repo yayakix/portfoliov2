@@ -18,10 +18,10 @@ function Projects() {
       <div className="grid md:grid-cols-2 space-y-10 lg:columns-2 md:columns-1 flex row">
         {projectslist.map((x) => (
           <div className="max-w-md overflow-hidden shadow-lg flex flex-col gap-2 dark:border-white	dark:border-2 dark:rounded-xl">
-            <img className="h-4/5 rounded" src={x.img} alt={x.title} />
+            <img className=" h-32 md:h-4/5 rounded" src={x.img} alt={x.title} />
 
             <div className="font-bold text-xl mb-2">{x.title}</div>
-            <p className="text-gray-700 text-base flex-1 dark:text-white">
+            <p className="text-sm lg:text-md  text-gray-700  flex-1 dark:text-white">
               {x.description}{" "}
             </p>
 
