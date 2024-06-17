@@ -1,12 +1,12 @@
 export default [
-  {
-    id: 1,
-    title: "Funky Shoes",
-    img: `${process.env.PUBLIC_URL}/images/funkyshoes.png`,
-    description: `This app will show you shoes like no other. This is an ecommerce site built with React and Firebase. It has user authentication that allows logged in users to add items to their the cart and mimic the process of purchasing those items.`,
-    livelink: "https://funkyshoes.netlify.app/",
-    codelink: "https://github.com/yayakix/Funky-Shoes-frontend",
-  },
+  // {
+  //   id: 1,
+  //   title: "Funky Shoes",
+  //   img: `${process.env.PUBLIC_URL}/images/funkyshoes.png`,
+  //   description: `This app will show you shoes like no other. This is an ecommerce site built with React and Firebase. It has user authentication that allows logged in users to add items to their the cart and mimic the process of purchasing those items.`,
+  //   livelink: "https://funkyshoes.netlify.app/",
+  //   codelink: "https://github.com/yayakix/Funky-Shoes-frontend",
+  // },
   {
     id: 2,
     title: "Instagram Clone",
