@@ -8,11 +8,13 @@ import Technologies from "./components/Technologies";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-full">
       <Header />
-      <Home />
-      <Projects />
-      <Technologies />
+      <div className="mx-4 md:mx-10">
+        <Home />
+        <Projects />
+        <Technologies />
+      </div>
       <Footer />
     </div>
   );

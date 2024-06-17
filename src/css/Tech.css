@@ -1,25 +1,21 @@
-.techpage{
-    background-color: #DAEAF1;
-    padding: 30px 0px 40px 0px;
-    
-
+.techpage {
+  background-color: #daeaf1;
+  padding: 30px 0px 40px 0px;
 }
-.techpage i{
-    font-size: 50px;
+.techpage i {
+  font-size: 50px;
 }
-.techpage i:hover{
-    color: white;
-    background-color: black;
+.techpage i:hover {
+  color: white;
+  background-color: black;
 }
-.techtitle{
-    margin-bottom: 30px;
-    font-size: xx-large;
+.techtitle {
+  margin-bottom: 30px;
+  font-size: xx-large;
 }
-.techpage .col{
-        transition: all .2s ease-in-out;
-
+.techpage .col {
+  transition: all 0.2s ease-in-out;
 }
-.techpage .col:hover{
-    transform: scale(1.1);
-
+.techpage .col:hover {
+  transform: scale(1.1);
 }
