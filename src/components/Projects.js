@@ -3,10 +3,18 @@ import projectslist from "../projectslist";
 
 function Projects() {
   return (
-    <div className="mx-10">
-      <h2 className="projectintro" id="projects">
-        Projects
-      </h2>
+    <div className=" ">
+      <div className="flex justify-center items-center mb-8 ">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <h2
+          className=" font-black flex justify-center mx-4	text-3xl"
+          id="projects"
+        >
+          Projects
+        </h2>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+
       <div className="space-y-10 lg:columns-2 md:columns-1 flex row">
         {projectslist.map((x) => (
           <div className="max-w-md rounded overflow-hidden shadow-lg flex flex-col">

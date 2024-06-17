@@ -2,7 +2,7 @@ import "../css/Home.css";
 
 function Home() {
   return (
-    <div className="mb-10">
+    <div className="my-10">
       <div
         class="relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16"
         id="about"
@@ -17,24 +17,16 @@ function Home() {
                 />
               </div>
             </div>
-            <div class="w-full text-center mt-20">
-              <div class="flex justify-center lg:pt-4 pt-8 pb-0">
-                <div class="p-3 text-center">
-                  <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">
-                    Web Developer
-                  </span>
-                </div>
-                <div class="p-3 text-center">
-                  <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">
-                    QA Engineer
-                  </span>
-                </div>
-
-                <div class="p-3 text-center">
-                  <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">
-                    Software Developer
-                  </span>
-                </div>
+            <div class="flex justify-center mt-24 ">
+              <div class="p-3 text-center">
+                <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">
+                  QA Engineer
+                </span>
+              </div>
+              <div class="p-3 text-center">
+                <span class="text-xl font-bold block uppercase tracking-wide text-slate-700">
+                  Software Developer
+                </span>
               </div>
             </div>
           </div>
