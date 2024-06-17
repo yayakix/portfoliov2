@@ -3,8 +3,8 @@ import projectslist from "../projectslist";
 
 function Projects() {
   return (
-    <div className=" ">
-      <div className="flex justify-center items-center mb-8 ">
+    <div className="mt-36">
+      <div className="flex justify-center items-center mb-20 ">
         <div class="flex-grow border-t border-gray-400"></div>
         <h2
           className=" font-black flex justify-center mx-4	text-3xl"
@@ -23,7 +23,7 @@ function Projects() {
             <div className="font-bold text-xl mb-2">{x.title}</div>
             <p className="text-gray-700 text-base flex-1">{x.description} </p>
 
-            <div className="px-6 pt-4 pb-2">
+            <div className="px-6 pt-4 pb-2 flex flex-row text-sm md:text-lg">
               <a href={x.livelink}>
                 <button class="mx-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                   Live Link
