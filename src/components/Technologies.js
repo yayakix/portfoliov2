@@ -31,7 +31,10 @@ function Technologies() {
     { id: 19, icon: "devicon-typescript-plain" },
   ];
   return (
-    <div className="techpage my-10 py-10  " id="skills shadow-2xl mb-36">
+    <div
+      className="techpage my-10 py-10 dark:bg-black  "
+      id="skills shadow-2xl mb-36  "
+    >
       <div className="flex justify-center items-center mb-8 ">
         <div class="flex-grow border-t border-gray-400"></div>
         <h2
@@ -44,11 +47,11 @@ function Technologies() {
       </div>
 
       <div className="techcontainer container p-2 md:p-10">
-        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 ">
           {iconList.map((icon) => {
             return (
               <div class="col">
-                <div class="col p-3 border bg-light">
+                <div class="col p-3 border  dark:bg-black">
                   <motion.div style={hovered ? { rotate: rotate } : {}}>
                     <i
                       onMouseEnter={() => setHovered(true)}
