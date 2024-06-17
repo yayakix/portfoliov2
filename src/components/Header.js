@@ -21,15 +21,15 @@ function Header() {
   ];
   return (
     <div className="header text-center bg-white flex justify-center items-center mb-24 shadow-xl	shadow-slate-50 h-16 sticky top-0 z-10">
-      <div className="sm:hidden md:block">
+      <div className="hidden md:block text-xl">
         <a href="#" id="hometab">
           Iyana Marquez
         </a>
       </div>
-      <div className="list-none flex flex-row">
+      <div className="list-none flex flex-row text-xs md:text-xl  ">
         {headerList.map((headerItem) => {
           return (
-            <li className="mx-4 flex-none">
+            <li className="mx-2 md:mx-4 flex-none">
               <a href={headerItem.url}>{headerItem.name}</a>
             </li>
           );
