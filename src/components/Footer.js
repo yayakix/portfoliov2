@@ -19,7 +19,7 @@ function Footer() {
     },
   ];
   return (
-    <footer className="footer text-2xl p-4   ">
+    <footer className="footer text-2xl p-4" id="contact">
       <div className="flex justify-center items-center my-10 ">
         <div class="flex-grow border-t border-gray-400"></div>
         <h2
