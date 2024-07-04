@@ -3,9 +3,9 @@ const Experience = () => {
     {
       dates: "October 2022 - Present",
       title: "Tenet Energy",
-      role: "QA Engineer",
+      role: "QA/FE Engineer",
       description:
-        "Worked as a QA Engineer at a fintech startup, primarily using Cypress for end-to-end testing. Responsibilities included creating and maintaining automated test scripts, performing manual QA to ensure software quality, and collaborating with development teams to identify and resolve defects.",
+        "Worked as a QA Engineer at a fintech startup, primarily using Cypress for end-to-end testing. Responsibilities included creating and maintaining automated test scripts, performing manual QA to ensure software quality, and collaborating with development teams to identify and resolve defects. Additionally, contributed as a front-end developer by implementing Figma designs and performing bug fixes.",
     },
     {
       dates: "May 2022 - August 2022",
