@@ -60,6 +60,7 @@ const Experience = () => {
           </div>
         </div>
       ))}
+      <div class="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-1000 text-left"></div>
 
       {/* section */}
     </div>

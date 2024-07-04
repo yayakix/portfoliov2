@@ -4,12 +4,9 @@ import projectslist from "../projectslist";
 function Projects() {
   return (
     <div className="">
-      <h2
-        className=" font-black flex justify-center mx-4	text-3xl text-pink-500"
-        id="projects"
-      >
-        Projects
-      </h2>
+      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
+        <h1 class="text-2xl font-bold leading-7 text-slate-900">Projects</h1>
+      </div>
 
       <div className=" flex flex-row flex-wrap">
         {projectslist.map((x) => (
@@ -40,6 +37,7 @@ function Projects() {
           </div>
         ))}
       </div>
+      <div class=" divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-1000 text-left"></div>
     </div>
   );
 }
