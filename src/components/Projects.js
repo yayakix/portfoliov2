@@ -3,26 +3,22 @@ import projectslist from "../projectslist";
 
 function Projects() {
   return (
-    <div className="my-36">
-      <div className="flex justify-center items-center mb-20 ">
-        <div class="flex-grow border-t border-gray-400"></div>
-        <h2
-          className=" font-black flex justify-center mx-4	text-3xl"
-          id="projects"
-        >
-          Projects
-        </h2>
-        <div class="flex-grow border-t border-gray-400"></div>
+    <div id="projects" className="">
+      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
+        <h1 class="text-2xl font-bold leading-7 text-slate-900">Projects</h1>
       </div>
-
-      <div className="grid md:grid-cols-2 space-y-10 lg:columns-2 md:columns-1 flex row">
+      <div className="flex flex-wrap justify-center">
         {projectslist.map((x) => (
-          <div className="max-w-md overflow-hidden shadow-lg flex flex-col gap-2 dark:border-white	dark:border-2 dark:rounded-xl">
-            <img className=" h-32 md:h-4/5 rounded" src={x.img} alt={x.title} />
+          <div className="bg-white max-w-md overflow-hidden shadow-sm flex flex-col gap-2 dark:border-white dark:border-2 dark:rounded-xl my-4 p-2 rounded w-full lg:w-full">
+            <img
+              className="h-32 md:h-4/5 rounded border-4 border-white"
+              src={x.img}
+              alt={x.title}
+            />
 
             <div className="font-bold text-xl mb-2">{x.title}</div>
-            <p className="text-sm lg:text-md  text-gray-700  flex-1 dark:text-white">
-              {x.description}{" "}
+            <p className="text-sm lg:text-md text-gray-700 flex-1 dark:text-white">
+              {x.description}
             </p>
 
             <div className="px-6 pt-4 pb-2 flex flex-row text-sm md:text-lg">
@@ -40,6 +36,7 @@ function Projects() {
           </div>
         ))}
       </div>
+      <div class="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-1000 text-left"></div>
     </div>
   );
 }

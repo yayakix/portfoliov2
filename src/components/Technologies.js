@@ -31,29 +31,24 @@ function Technologies() {
     { id: 19, icon: "devicon-typescript-plain" },
   ];
   return (
-    <div className="techpage my-10 py-10 dark:bg-black  " id="skills">
-      <div className="flex justify-center items-center mb-8 ">
-        <div class="flex-grow border-t border-gray-400"></div>
-        <h2
-          className=" font-black flex justify-center mx-4	text-3xl"
-          id="projects"
-        >
+    <div className="techpage dark:bg-black" id="technologies">
+      <div className="flex justify-center items-center mb-8">
+        <h2 className="text-pink-500 flex justify-center mx-4 text-3xl">
           Technologies
         </h2>
-        <div class="flex-grow border-t border-gray-400"></div>
       </div>
 
       <div className="techcontainer container p-2 md:p-10">
-        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 ">
+        <div className="row row-cols-4 md:row-cols-2 g-2 g-lg-3">
           {iconList.map((icon) => {
             return (
-              <div class="col">
-                <div class="col p-3 border  dark:bg-black">
+              <div className="col" key={icon.id}>
+                <div className="col p-1 md:p-4 border dark:bg-black ">
                   <motion.div style={hovered ? { rotate: rotate } : {}}>
                     <i
                       onMouseEnter={() => setHovered(true)}
                       onMouseLeave={() => setHovered(false)}
-                      class={icon.icon}
+                      className={icon.icon}
                     ></i>
                   </motion.div>
                 </div>
