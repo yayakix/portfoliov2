@@ -18,7 +18,7 @@ function Home() {
   });
   return (
     <div
-      className="px-2 sm:px-6 relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 w-full mb-6 shadow-lg rounded-xl mt-16 my-10 text-sm sm:text-xl dark:bg-black"
+      className="relative mx-auto md:max-w-2xl min-w-0 mt-16 my-10 text-sm sm:text-xl dark:bg-black"
       id="about"
     >
       <div className="flex flex-wrap justify-center">
@@ -30,16 +30,6 @@ function Home() {
         </div>
         <div className="flex justify-center mt-24 ">
           <AnimationComponent />
-
-          {/* {titlesList.map((item) => {
-            return (
-              <div className="m-2 text-center">
-                <span className="text-xl font-bold block uppercase tracking-wide text-slate-700">
-                  {item.text}{" "}
-                </span>
-              </div>
-            );
-          })} */}
         </div>
       </div>
       <div className="text-center mt-2 ">
@@ -51,15 +41,35 @@ function Home() {
           Tampa, Florida
         </div>
       </div>
-      <div className="mt-4 p-2 sm:p-10 border-t border-slate-200 text-center">
+      <div className="sm:p-4 border-t border-slate-200 text-center">
         <div className="flex flex-wrap justify-center">
           <div className="w-full ">
-            <animated.div
-              style={{
-                ...springs,
-              }}
-            >
-              <p className="font-light leading-relaxed text-slate-600 mb-4 dark:text-white">
+            <div class="mt-10 text-center lg:mt-12 lg:text-left">
+              <p class="text-xl font-bold text-slate-900 ">
+                <a href="/" className="text-pink-500">
+                  About me
+                </a>
+              </p>
+              <section class=" lg:block">
+                <p class=" text-base leading-7 text-slate-700 lg:line-clamp-4">
+                  Creative, detail-oriented, developer with a deep interest in
+                  solving common problems. Proven track record of creating and
+                  implementing successful front and back end web applications.
+                  I'm able to quickly pick up new technologies and enjoy the
+                  process of learning new things. I'm currently looking to bring
+                  my skills to a tech company where I can create modern,
+                  responsive, and user-friendly websites.
+                </p>
+                {/* <button
+                  type="button"
+                  class="mt-2 text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900 lg:inline-block"
+                >
+                  Show more
+                </button> */}
+              </section>
+            </div>
+
+            {/* <p className="font-light leading-relaxed text-slate-600 mb-4 dark:text-white">
                 Creative, detail-oriented, developer with a deep interest in
                 solving common problems. Proven track record of creating and
                 implementing successful front and back end web applications. I'm
@@ -67,15 +77,7 @@ function Home() {
                 of learning new things. I'm currently looking to bring my skills
                 to a tech company where I can create modern, responsive, and
                 user-friendly websites.
-              </p>
-            </animated.div>
-
-            <a
-              href="#projects"
-              className="font-normal text-slate-700 hover:text-slate-400 dark:text-white"
-            >
-              See My Work ⬇
-            </a>
+              </p> */}
           </div>
         </div>
       </div>

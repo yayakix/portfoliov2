@@ -19,19 +19,17 @@ function Footer() {
     },
   ];
   return (
-    <footer className="footer text-2xl p-4" id="contact">
-      <div className="flex justify-center items-center my-10 ">
-        <div class="flex-grow border-t border-gray-400"></div>
+    <footer className="footer text-2xl " id="contact">
+      <div className="flex justify-center items-center ">
         <h2
-          className=" text-white flex justify-center mx-4	text-3xl"
+          className=" text-pink-500 flex justify-center text-3xl"
           id="projects"
         >
           Contact
         </h2>
-        <div class="flex-grow border-t border-gray-400"></div>
       </div>
 
-      <div className="group flex flex-col md:flex-row justify-center items-center mb-10">
+      <div className="group ">
         {linkList.map((item) => {
           return (
             <a

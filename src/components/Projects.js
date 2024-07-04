@@ -3,22 +3,22 @@ import projectslist from "../projectslist";
 
 function Projects() {
   return (
-    <div className="my-36">
-      <div className="flex justify-center items-center mb-20 ">
-        <div class="flex-grow border-t border-gray-400"></div>
-        <h2
-          className=" font-black flex justify-center mx-4	text-3xl"
-          id="projects"
-        >
-          Projects
-        </h2>
-        <div class="flex-grow border-t border-gray-400"></div>
-      </div>
+    <div className="">
+      <h2
+        className=" font-black flex justify-center mx-4	text-3xl text-pink-500"
+        id="projects"
+      >
+        Projects
+      </h2>
 
-      <div className="grid md:grid-cols-2 space-y-10 lg:columns-2 md:columns-1 flex row">
+      <div className=" flex flex-row flex-wrap">
         {projectslist.map((x) => (
-          <div className="max-w-md overflow-hidden shadow-lg flex flex-col gap-2 dark:border-white	dark:border-2 dark:rounded-xl">
-            <img className=" h-32 md:h-4/5 rounded" src={x.img} alt={x.title} />
+          <div className="bg-white max-w-md overflow-hidden shadow-sm flex flex-col gap-2 dark:border-white	dark:border-2 dark:rounded-xl my-4 p-2 rounded">
+            <img
+              className=" h-32 md:h-4/5 rounded border-4 border-white"
+              src={x.img}
+              alt={x.title}
+            />
 
             <div className="font-bold text-xl mb-2">{x.title}</div>
             <p className="text-sm lg:text-md  text-gray-700  flex-1 dark:text-white">
