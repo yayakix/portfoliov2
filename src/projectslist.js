@@ -7,17 +7,37 @@ export default [
   //   livelink: "https://funkyshoes.netlify.app/",
   //   codelink: "https://github.com/yayakix/Funky-Shoes-frontend",
   // },
+  // {
+  //   id: 2,
+  //   title: "Instagram Clone",
+  //   img: `${process.env.PUBLIC_URL}/images/igclone.png`,
+  //   description: `A clone of the popular Instagram! I
+  //               recreated the views for the home and profile pages of individual
+  //               users. Users can sign up and post photos that are saved to their
+  //               own accounts. This is a fullstack application created with the
+  //               MERN stack.`,
+  //   livelink: "https://insta-clone33.herokuapp.com/",
+  //   codelink: "https://github.com/yayakix/instagram-clone",
+  // },
   {
-    id: 2,
-    title: "Instagram Clone",
-    img: `${process.env.PUBLIC_URL}/images/igclone.png`,
-    description: `A clone of the popular Instagram! I
-                recreated the views for the home and profile pages of individual
-                users. Users can sign up and post photos that are saved to their
-                own accounts. This is a fullstack application created with the
-                MERN stack.`,
-    livelink: "https://insta-clone33.herokuapp.com/",
-    codelink: "https://github.com/yayakix/instagram-clone",
+    id: 6,
+    title: "Social Art",
+    img: `${process.env.PUBLIC_URL}/images/socialartsite.png`,
+    description:
+      "A social platform for artists to share their 3D art. Built using NextJS, Tailwind, Clerk Auth and Postgresql to store user data. Hosted by Vercel. ",
+    livelink: "https://socialartwebsite.vercel.app/",
+    codelink:
+      "https://github.com/fractal-bootcamp/iyanamarquez.socialartwebsite",
+  },
+  {
+    id: 7,
+    title: "Tic Tac Toe",
+    img: `${process.env.PUBLIC_URL}/images/tictactoe.png`,
+    description:
+      "A multi-client TicTacToe game. Built with React and Tailwind. Uses cookies to keep track of the current player. (Takes a minute to load the server before you can see available lobbys)",
+    livelink: "https://tictactoe-iyanam.netlify.app/",
+    codelink:
+      "https://github.com/fractal-bootcamp/iyanamarquez.tictacagaintoe2",
   },
   {
     id: 3,
@@ -46,7 +66,7 @@ export default [
     title: "Aqua Crafts",
     img: `${process.env.PUBLIC_URL}/images/aquacraft.png`,
     description:
-      "An ecommerce site I built for a local business owner. Uses Firebase and Firestore for login and storage. It utilizes the Stripe API to process payments. ",
+      "An ecommerce site I built for a local business owner (my mom). Uses Firebase and Firestore for login and storage. It utilizes the Stripe API to process payments. ",
     livelink: "https://main--aquacrafts-store.netlify.app/",
     codelink: "https://github.com/yayakix/aqua_crafts_store",
   },

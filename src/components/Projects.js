@@ -22,12 +22,12 @@ function Projects() {
             </p>
 
             <div className="px-6 pt-4 pb-2 flex flex-row text-sm md:text-lg">
-              <a href={x.livelink}>
+              <a href={x.livelink} target="_blank">
                 <button class="mx-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                   Live Link
                 </button>
               </a>
-              <a href={x.codelink}>
+              <a href={x.codelink} target="_blank">
                 <button class="mx-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                   See Code
                 </button>
