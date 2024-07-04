@@ -50,7 +50,7 @@ const DisplaySection = () => {
               <div class="lg:px-8">
                 <div class="lg:max-w-4xl">
                   <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
-                    <div class="flex flex-col items-start">
+                    <div class="flex flex-col items-start" id="contact">
                       <Footer />
                     </div>
                   </div>

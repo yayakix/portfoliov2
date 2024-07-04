@@ -17,7 +17,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App w-full lg:flex h-screen">
+      <div className="App w-full lg:flex h-screen scroll-smooth">
         <Navbar /> {/* Add the Navbar component */}
         <div className="relative z-10 px-4 md:mt-36 md:mt-16 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:overflow-hidden">
           <Home />

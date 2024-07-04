@@ -31,12 +31,9 @@ function Technologies() {
     { id: 19, icon: "devicon-typescript-plain" },
   ];
   return (
-    <div className="techpage dark:bg-black" id="skills">
+    <div className="techpage dark:bg-black" id="technologies">
       <div className="flex justify-center items-center mb-8">
-        <h2
-          className="text-pink-500 flex justify-center mx-4 text-3xl"
-          id="projects"
-        >
+        <h2 className="text-pink-500 flex justify-center mx-4 text-3xl">
           Technologies
         </h2>
       </div>

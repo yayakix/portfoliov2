@@ -2,29 +2,29 @@ const Experience = () => {
   const data = [
     {
       dates: "October 2022 - Present",
-      title: "Tenet",
+      title: "Tenet Energy",
       role: "QA Engineer",
       description:
-        "The Christmas of 1989 wasn't the first time Harry and Marv crossed paths with the McCallisters. The real story starts in 1973, when Peter tripped Marv in the highschool locker room.",
+        "Worked as a QA Engineer at a fintech startup, primarily using Cypress for end-to-end testing. Responsibilities included creating and maintaining automated test scripts, performing manual QA to ensure software quality, and collaborating with development teams to identify and resolve defects.",
     },
     {
       dates: "May 2022 - August 2022",
       title: "General Assembly",
       role: "Coding student",
       description:
-        "The Christmas of 1989 wasn't the first time Harry and Marv crossed paths with the McCallisters. The real story starts in 1973, when Peter tripped Marv in the highschool locker room.",
+        "Full-stack software engineering immersive student in an intensive, twelve-week, 450+ hour program focused on product development fundamentals, object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies. Developed a portfolio of individual and group projects.",
     },
     {
       dates: "December 2021 - May 2022",
       title: "Quest Diagnostics",
       role: "Lab Assistant",
       description:
-        "The Christmas of 1989 wasn't the first time Harry and Marv crossed paths with the McCallisters. The real story starts in 1973, when Peter tripped Marv in the highschool locker room.",
+        "Worked as a Lab Assistant in multiple departments, responsible for handling and processing biological samples. Duties included maintaining and troubleshooting laboratory equipment, ensuring accurate sample tracking, and adhering to strict safety and quality protocols. Collaborated with lab technicians and other staff to support efficient lab operations.",
     },
   ];
   return (
-    <div>
-      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
+    <div id="home">
+      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0 mt-16">
         <h1 class="text-2xl font-bold leading-7 text-slate-900">Experience</h1>
       </div>
       {data.map((item) => (

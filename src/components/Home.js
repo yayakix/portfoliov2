@@ -17,10 +17,7 @@ function Home() {
     delay: 500,
   });
   return (
-    <div
-      className="relative mx-auto md:max-w-2xl min-w-0 mt-16 my-10 text-sm sm:text-xl dark:bg-black"
-      id="about"
-    >
+    <div className="relative mx-auto md:max-w-2xl min-w-0 mt-36 lg:mt-20 my-10 text-sm sm:text-xl dark:bg-black">
       <div className="flex flex-wrap justify-center">
         <div className="w-full flex justify-center ">
           <img

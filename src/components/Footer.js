@@ -23,7 +23,7 @@ function Footer() {
       <div className="flex justify-center items-center ">
         <h2
           className=" text-pink-500 flex justify-center text-3xl"
-          id="projects"
+          id="contact"
         >
           Contact
         </h2>
