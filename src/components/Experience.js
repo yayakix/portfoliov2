@@ -24,43 +24,42 @@ const Experience = () => {
   ];
   return (
     <div id="home">
-      <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0 mt-16">
-        <h1 class="text-2xl font-bold leading-7 text-slate-900">Experience</h1>
+      <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0 mt-16">
+        <h1 className="text-2xl font-bold leading-7 text-slate-900 text-center">
+          Experience
+        </h1>
       </div>
       {data.map((item) => (
-        <div class="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100 text-left">
-          <div class="flex flex-col items-start">
-            <div class="w-full text-left">
+        <div className="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100 text-left">
+          <div className="flex flex-col items-start">
+            <div className="w-full text-left">
               <time
-                datetime="2022-02-10T00:00:00.000Z"
-                class="font-mono text-sm leading-7 text-slate-500"
+                dateTime="2022-02-10T00:00:00.000Z"
+                className="font-mono text-sm leading-7 text-slate-500"
               >
                 {item.dates}
               </time>
             </div>
             <h2
               id="episode-3-title"
-              class="mt-2 text-lg font-bold text-slate-900 w-full text-left"
+              className="mt-2 text-lg font-bold text-slate-900 w-full text-left"
             >
               <a href="/experience">{item.title}</a>
             </h2>
 
-            <div class="flex items-start gap-4 text-left">
-              <button
-                type="button"
-                aria-label="Play episode 3: The Wet Bandits"
-                class=" text-left gap-x-3 text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900"
-              >
-                <span aria-hidden="true">{item.role}</span>
-              </button>
-            </div>
-            <p class="mt-1 text-base leading-7 text-slate-700">
+            <h3
+              className=" gap-x-3 text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900"
+              aria-hidden="true"
+            >
+              {item.role}
+            </h3>
+            <p className="mt-1 text-base leading-7 text-slate-700 text-left">
               {item.description}
             </p>
           </div>
         </div>
       ))}
-      <div class="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-1000 text-left"></div>
+      <div className="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-1000 text-left"></div>
 
       {/* section */}
     </div>
