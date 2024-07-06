@@ -70,9 +70,7 @@ function Home() {
                   solving common problems. Proven track record of creating and
                   implementing successful front and back end web applications.
                   I'm able to quickly pick up new technologies and enjoy the
-                  process of learning new things. I'm currently looking to bring
-                  my skills to a tech company where I can create modern,
-                  responsive, and user-friendly websites.
+                  process of learning new things.
                 </p>
               </section>
             </div>
