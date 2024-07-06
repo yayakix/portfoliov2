@@ -4,7 +4,7 @@ export default [
     title: "Funky Shoes",
     img: `${process.env.PUBLIC_URL}/images/funkyshoesv2.png`,
     description: `Ecommerce site that showcases the funkiest shoes you'll ever see. Built with React and Tailwind. Authentication setup with Clerk.`,
-    livelink: "https://main--funkyshoesv2.netlify.app/",
+    livelink: "https://funkyshoesv2.netlify.app/",
     codelink: "https://github.com/yayakix/iyanamarquez.shoesearchapp",
   },
   // {
