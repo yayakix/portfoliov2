@@ -1,12 +1,12 @@
 export default [
-  // {
-  //   id: 1,
-  //   title: "Funky Shoes",
-  //   img: `${process.env.PUBLIC_URL}/images/funkyshoes.png`,
-  //   description: `This app will show you shoes like no other. This is an ecommerce site built with React and Firebase. It has user authentication that allows logged in users to add items to their the cart and mimic the process of purchasing those items.`,
-  //   livelink: "https://funkyshoes.netlify.app/",
-  //   codelink: "https://github.com/yayakix/Funky-Shoes-frontend",
-  // },
+  {
+    id: 1,
+    title: "Funky Shoes",
+    img: `${process.env.PUBLIC_URL}/images/funkyshoesv2.png`,
+    description: `Ecommerce site that showcases the funkiest shoes you'll ever see. Built with React and Tailwind. Authentication setup with Clerk.`,
+    livelink: "https://main--funkyshoesv2.netlify.app/",
+    codelink: "https://github.com/yayakix/iyanamarquez.shoesearchapp",
+  },
   // {
   //   id: 2,
   //   title: "Instagram Clone",
@@ -19,15 +19,24 @@ export default [
   //   livelink: "https://insta-clone33.herokuapp.com/",
   //   codelink: "https://github.com/yayakix/instagram-clone",
   // },
+  // {
+  //   id: 6,
+  //   title: "Social Art",
+  //   img: `${process.env.PUBLIC_URL}/images/socialartsite.png`,
+  //   description:
+  //     "A social platform for artists to share their 3D art. Built using NextJS, Tailwind, Clerk Auth and Postgresql to store user data. Hosted by Vercel. ",
+  //   livelink: "https://socialartwebsite.vercel.app/",
+  //   codelink:
+  //     "https://github.com/fractal-bootcamp/iyanamarquez.socialartwebsite",
+  // },
   {
-    id: 6,
-    title: "Social Art",
-    img: `${process.env.PUBLIC_URL}/images/socialartsite.png`,
+    id: 5,
+    title: "Aqua Crafts",
+    img: `${process.env.PUBLIC_URL}/images/aquacraft.png`,
     description:
-      "A social platform for artists to share their 3D art. Built using NextJS, Tailwind, Clerk Auth and Postgresql to store user data. Hosted by Vercel. ",
-    livelink: "https://socialartwebsite.vercel.app/",
-    codelink:
-      "https://github.com/fractal-bootcamp/iyanamarquez.socialartwebsite",
+      "An ecommerce site I built for a local business owner (my mom). Uses Firebase and Firestore for login and storage. It utilizes the Stripe API to process payments. ",
+    livelink: "https://main--aquacrafts-store.netlify.app/",
+    codelink: "https://github.com/yayakix/aqua_crafts_store",
   },
   {
     id: 7,
@@ -60,14 +69,5 @@ export default [
                 good is your memory?`,
     livelink: "https://simonsaysgame23422.netlify.app/",
     codelink: "https://github.com/yayakix/simonsays",
-  },
-  {
-    id: 5,
-    title: "Aqua Crafts",
-    img: `${process.env.PUBLIC_URL}/images/aquacraft.png`,
-    description:
-      "An ecommerce site I built for a local business owner (my mom). Uses Firebase and Firestore for login and storage. It utilizes the Stripe API to process payments. ",
-    livelink: "https://main--aquacrafts-store.netlify.app/",
-    codelink: "https://github.com/yayakix/aqua_crafts_store",
   },
 ];
