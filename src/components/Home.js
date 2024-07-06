@@ -74,22 +74,16 @@ function Home() {
                   my skills to a tech company where I can create modern,
                   responsive, and user-friendly websites.
                 </p>
-                {/* <button
-                  type="button"
-                  class="mt-2 text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900 lg:inline-block"
-                >
-                  Show more
-                </button> */}
               </section>
             </div>
-            <div className=" mt-6flex justify-center gap-4">
-              <a href={linkList[0].url}>
+            <div className=" mt-6flex justify-center gap-4 ">
+              <a href={linkList[0].url} target="_blank">
                 <GitHubIcon fontSize="large" />
               </a>
-              <a href={linkList[1].url}>
+              <a href={linkList[1].url} target="_blank">
                 <LinkedInIcon fontSize="large" />
               </a>
-              <a href={linkList[2].url}>
+              <a href={linkList[2].url} target="_blank">
                 <DescriptionIcon fontSize="large" />
               </a>
             </div>
