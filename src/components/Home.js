@@ -1,8 +1,25 @@
 import "../css/Home.css";
 import AnimationComponent from "./TypeAnimation.tsx";
 import { useSpring, animated } from "@react-spring/web";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 function Home() {
+  const linkList = [
+    {
+      name: "Github",
+      url: "https://github.com/yayakix",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/iyana-marquez/",
+    },
+    {
+      name: "Resume",
+      url: "https://docs.google.com/document/d/10DHq4Xq6HKmtkbnLC8-JJA_4nqbkPZ-RNV2bcQ6QnhQ/edit?usp=sharing",
+    },
+  ];
   const titlesList = [
     {
       text: " QA Engineer",
@@ -17,7 +34,7 @@ function Home() {
     delay: 500,
   });
   return (
-    <div className="relative mx-auto md:max-w-2xl min-w-0 mt-36 lg:mt-20 my-10 text-sm sm:text-xl dark:bg-black">
+    <div className="relative mx-auto md:max-w-2xl min-w-0 pt-16 lg:mt-20 my-10 text-sm sm:text-xl dark:bg-black">
       <div className="flex flex-wrap justify-center">
         <div className="w-full flex justify-center ">
           <img
@@ -41,14 +58,14 @@ function Home() {
       <div className="sm:p-4 border-t border-slate-200 text-center">
         <div className="flex flex-wrap justify-center">
           <div className="w-full ">
-            <div class="mt-10 text-center lg:mt-12 lg:text-left">
+            <div class="mt-4 text-center lg:mt-12 lg:text-left">
               <p class="text-xl font-bold text-slate-900 ">
                 <a href="/" className="text-pink-500">
                   About me
                 </a>
               </p>
               <section class=" lg:block">
-                <p class=" text-base leading-7 text-slate-700 lg:line-clamp-4">
+                <p class="text-xs md:text-lg text-base leading-7 text-slate-700 lg:line-clamp-4 py-2">
                   Creative, detail-oriented, developer with a deep interest in
                   solving common problems. Proven track record of creating and
                   implementing successful front and back end web applications.
@@ -57,15 +74,19 @@ function Home() {
                   my skills to a tech company where I can create modern,
                   responsive, and user-friendly websites.
                 </p>
-                {/* <button
-                  type="button"
-                  class="mt-2 text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900 lg:inline-block"
-                >
-                  Show more
-                </button> */}
               </section>
             </div>
-
+            <div className=" mt-6flex justify-center gap-4 ">
+              <a href={linkList[0].url} target="_blank">
+                <GitHubIcon fontSize="large" />
+              </a>
+              <a href={linkList[1].url} target="_blank">
+                <LinkedInIcon fontSize="large" />
+              </a>
+              <a href={linkList[2].url} target="_blank">
+                <DescriptionIcon fontSize="large" />
+              </a>
+            </div>
             {/* <p className="font-light leading-relaxed text-slate-600 mb-4 dark:text-white">
                 Creative, detail-oriented, developer with a deep interest in
                 solving common problems. Proven track record of creating and
