@@ -34,7 +34,7 @@ function Home() {
     delay: 500,
   });
   return (
-    <div className="relative mx-auto md:max-w-2xl min-w-0 pt-16 lg:mt-20 my-10 text-sm sm:text-xl dark:bg-black">
+    <div className="relative mx-auto md:max-w-2xl min-w-0 pt-8 lg:mt-20 my-10 text-sm sm:text-xl dark:bg-black">
       <div className="flex flex-wrap justify-center">
         <div className="w-full flex justify-center ">
           <img
