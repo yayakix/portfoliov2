@@ -1,12 +1,4 @@
 export default [
-  {
-    id: 1,
-    title: "Funky Shoes",
-    img: `${process.env.PUBLIC_URL}/images/funkyshoesv2.png`,
-    description: `Ecommerce site that showcases the funkiest shoes you'll ever see. Built with React and Tailwind. Authentication setup with Clerk.`,
-    livelink: "https://funkyshoesv2.netlify.app/",
-    codelink: "https://github.com/yayakix/iyanamarquez.shoesearchapp",
-  },
   // {
   //   id: 2,
   //   title: "Instagram Clone",
@@ -39,15 +31,22 @@ export default [
     codelink: "https://github.com/yayakix/aqua_crafts_store",
   },
   {
-    id: 7,
-    title: "Tic Tac Toe",
-    img: `${process.env.PUBLIC_URL}/images/tictactoe.png`,
-    description:
-      "A multi-client TicTacToe game. Built with React and Tailwind. Uses cookies to keep track of the current player. (Takes a minute to load the server before you can see available lobbys)",
-    livelink: "https://tictactoe-iyanam.netlify.app/",
-    codelink:
-      "https://github.com/fractal-bootcamp/iyanamarquez.tictacagaintoe2",
+    id: 8,
+    title: "Alg Visualizer",
+    img: `${process.env.PUBLIC_URL}/images/algvisualizer.png`,
+    description: `This web application showcases real-time visualizations of fundamental algorithms. It offers an intuitive way to understand algorithm behaviors through engaging visuals`,
+    livelink: "https://alg-visualiz3r.netlify.app/",
+    codelink: "https://github.com/yayakix/iyanamarquez.Algorithmsv1",
   },
+  {
+    id: 1,
+    title: "Funky Shoes",
+    img: `${process.env.PUBLIC_URL}/images/funkyshoesv2.png`,
+    description: `Ecommerce site that showcases the funkiest shoes you'll ever see. Built with React and Tailwind. Authentication setup with Clerk.`,
+    livelink: "https://funkyshoesv2.netlify.app/",
+    codelink: "https://github.com/yayakix/iyanamarquez.shoesearchapp",
+  },
+
   {
     id: 3,
     title: "Calculator",
@@ -69,5 +68,15 @@ export default [
                 good is your memory?`,
     livelink: "https://simonsaysgame23422.netlify.app/",
     codelink: "https://github.com/yayakix/simonsays",
+  },
+  {
+    id: 7,
+    title: "Tic Tac Toe",
+    img: `${process.env.PUBLIC_URL}/images/tictactoe.png`,
+    description:
+      "A multi-client TicTacToe game. Built with React and Tailwind. Uses cookies to keep track of the current player. (Takes a minute to load the server before you can see available lobbys)",
+    livelink: "https://tictactoe-iyanam.netlify.app/",
+    codelink:
+      "https://github.com/fractal-bootcamp/iyanamarquez.tictacagaintoe2",
   },
 ];

@@ -4,13 +4,15 @@ const Experience = () => {
       dates: "October 2022 - Present",
       title: "Tenet Energy",
       role: "QA/FE Engineer",
+      link: "https://www.linkedin.com/company/tenetenergy/mycompany/",
       description:
-        "Worked as a QA Engineer at a fintech startup, primarily using Cypress for end-to-end testing. Responsibilities included creating and maintaining automated test scripts, performing manual QA to ensure software quality, and collaborating with development teams to identify and resolve defects. Additionally, contributed as a front-end developer by implementing Figma designs and performing bug fixes.",
+        "Worked as a QA Engineer at an early Fintech startup, primarily using Cypress for end-to-end testing. Responsibilities included creating and maintaining automated test scripts, performing manual QA to ensure software quality, and collaborating with development teams to identify and resolve defects. Additionally, contributed as a front-end developer by implementing Figma designs and performing bug fixes.",
     },
     {
       dates: "May 2022 - August 2022",
       title: "General Assembly",
       role: "Coding student",
+      link: "https://generalassemb.ly/",
       description:
         "Full-stack software engineering immersive student in an intensive, twelve-week, 450+ hour program focused on product development fundamentals, object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies. Developed a portfolio of individual and group projects.",
     },
@@ -18,6 +20,7 @@ const Experience = () => {
       dates: "December 2021 - May 2022",
       title: "Quest Diagnostics",
       role: "Lab Assistant",
+      link: "https://www.questdiagnostics.com/",
       description:
         "Worked as a Lab Assistant in multiple departments, responsible for handling and processing biological samples. Duties included maintaining and troubleshooting laboratory equipment, ensuring accurate sample tracking, and adhering to strict safety and quality protocols. Collaborated with lab technicians and other staff to support efficient lab operations.",
     },
@@ -44,7 +47,13 @@ const Experience = () => {
               id="episode-3-title"
               className="mt-2 text-lg font-bold text-slate-900 w-full text-left"
             >
-              <a href="/experience">{item.title}</a>
+              <a
+                href={item.link ? item.link : null}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {item.title}
+              </a>
             </h2>
 
             <h3
