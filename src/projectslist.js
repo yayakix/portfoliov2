@@ -31,6 +31,15 @@ export default [
     codelink: "https://github.com/yayakix/aqua_crafts_store",
   },
   {
+    id: 7,
+    title: "Tic Tac Toe",
+    img: `${process.env.PUBLIC_URL}/images/tictacimage.png`,
+    description:
+      "A multi-client TicTacToe game. Built with React and Tailwind. Uses WebSockets to keep track of the game state. ",
+    livelink: "https://tictactoe-yaya.netlify.app/",
+    codelink: "https://github.com/yayakix/tictactoe-websockets",
+  },
+  {
     id: 8,
     title: "Alg Visualizer",
     img: `${process.env.PUBLIC_URL}/images/algvisualizer.png`,
@@ -39,22 +48,30 @@ export default [
     codelink: "https://github.com/yayakix/iyanamarquez.Algorithmsv1",
   },
   {
-    id: 1,
-    title: "Funky Shoes",
-    img: `${process.env.PUBLIC_URL}/images/funkyshoesv2.png`,
-    description: `Ecommerce site that showcases the funkiest shoes you'll ever see. Built with React and Tailwind. Authentication setup with Clerk.`,
-    livelink: "https://funkyshoesv2.netlify.app/",
-    codelink: "https://github.com/yayakix/iyanamarquez.shoesearchapp",
+    id: 9,
+    title: "Todo list",
+    img: `${process.env.PUBLIC_URL}/images/todolist.png`,
+    description: `Simple todo list app built with React and Tailwind. Notes data is saved to local storage and managed with Zustand.`,
+    livelink: "https://todolist-yaya.netlify.app/",
+    codelink:
+      "https://github.com/fractal-bootcamp/iyanamarquez.task-management",
   },
+  // {
+  //   id: 1,
+  //   title: "Funky Shoes",
+  //   img: `${process.env.PUBLIC_URL}/images/funkyshoesv2.png`,
+  //   description: `Ecommerce site that showcases the funkiest shoes you'll ever see. Built with React and Tailwind. Authentication setup with Clerk.`,
+  //   livelink: "https://funkyshoesv2.netlify.app/",
+  //   codelink: "https://github.com/yayakix/iyanamarquez.shoesearchapp",
+  // },
 
   {
     id: 3,
     title: "Calculator",
     img: `${process.env.PUBLIC_URL}/images/calc.png`,
-    description: `This is a calculator that performs simple
+    description: `A React calculator that performs simple
                 math operations. It performs 4 basic operations, in addition to
-                handling percents and negative numbers. This app was created
-                with functional components, state and hooks.`,
+                handling percents and negative numbers.`,
     livelink: "https://simplecalculator-7d4924.netlify.app/",
     codelink: "https://github.com/yayakix/calculator-react",
   },
@@ -62,21 +79,11 @@ export default [
     id: 4,
     title: "Simon Says",
     img: `${process.env.PUBLIC_URL}/images/simonsays.png`,
-    description: `A pattern memory game. Press any key to
+    description: `A pattern memory game built with HTML, CSS, Javascript and JQuery. Press any key to
                 start and correctly recreate the growing pattern of the game. If
                 the pattern is guessed incorrectly the game will restart! How
                 good is your memory?`,
     livelink: "https://simonsaysgame23422.netlify.app/",
     codelink: "https://github.com/yayakix/simonsays",
-  },
-  {
-    id: 7,
-    title: "Tic Tac Toe",
-    img: `${process.env.PUBLIC_URL}/images/tictactoe.png`,
-    description:
-      "A multi-client TicTacToe game. Built with React and Tailwind. Uses cookies to keep track of the current player. (Takes a minute to load the server before you can see available lobbys)",
-    livelink: "https://tictactoe-iyanam.netlify.app/",
-    codelink:
-      "https://github.com/fractal-bootcamp/iyanamarquez.tictacagaintoe2",
   },
 ];
