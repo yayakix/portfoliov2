@@ -58,14 +58,14 @@ function Home() {
       <div className="sm:p-4 border-t border-slate-200 text-center">
         <div className="flex flex-wrap justify-center">
           <div className="w-full ">
-            <div class="mt-4 text-center lg:mt-12 lg:text-left">
+            <div class="mt-2 sm:mt-0 text-center lg:mt-12 lg:text-left">
               <p class="text-xl font-bold text-slate-900 ">
                 <a href="/" className="text-pink-500">
                   About me
                 </a>
               </p>
               <section class=" lg:block">
-                <p class="text-xs md:text-lg text-base leading-7 text-slate-700 lg:line-clamp-4 py-2">
+                <p class="text-sm md:text-md leading-7 text-slate-700 lg:line-clamp-4 py-2">
                   Creative, detail-oriented, developer with a deep interest in
                   solving common problems. Proven track record of creating and
                   implementing successful front and back end web applications.
