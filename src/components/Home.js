@@ -34,7 +34,7 @@ function Home() {
     delay: 500,
   });
   return (
-    <div className="relative mx-auto md:max-w-2xl min-w-0 pt-8 lg:mt-20 my-10 text-sm sm:text-xl dark:bg-black">
+    <div className="relative mx-auto md:max-w-2xl min-w-0 lg:mt-20 text-sm sm:text-xl dark:bg-black">
       <div className="flex flex-wrap justify-center">
         <div className="w-full flex justify-center ">
           <img
@@ -55,7 +55,7 @@ function Home() {
           Tampa, Florida
         </div>
       </div>
-      <div className="sm:p-4 border-t border-slate-200 text-center">
+      <div className=" border-t border-slate-200 text-center">
         <div className="flex flex-wrap justify-center">
           <div className="w-full ">
             <div class="mt-2 sm:mt-0 text-center lg:mt-12 lg:text-left">
@@ -65,7 +65,7 @@ function Home() {
                 </a>
               </p>
               <section class=" lg:block">
-                <p class="text-sm md:text-md leading-7 text-slate-700 lg:line-clamp-4 py-2">
+                <p class="text-xs md:text-md leading-7 text-slate-700 lg:line-clamp-4 py-2">
                   Creative, detail-oriented, developer with a deep interest in
                   solving common problems. Proven track record of creating and
                   implementing successful front and back end web applications.
@@ -74,14 +74,26 @@ function Home() {
                 </p>
               </section>
             </div>
-            <div className=" mt-6flex justify-center gap-4 ">
-              <a href={linkList[0].url} target="_blank">
+            <div className="">
+              <a
+                href={linkList[0].url}
+                target="_blank"
+                className="text-pink-500 hover:text-black transition-colors duration-200"
+              >
                 <GitHubIcon fontSize="large" />
               </a>
-              <a href={linkList[1].url} target="_blank">
+              <a
+                href={linkList[1].url}
+                target="_blank"
+                className="text-pink-500 hover:text-black transition-colors duration-200"
+              >
                 <LinkedInIcon fontSize="large" />
               </a>
-              <a href={linkList[2].url} target="_blank">
+              <a
+                href={linkList[2].url}
+                target="_blank"
+                className="text-pink-500 hover:text-black transition-colors duration-200"
+              >
                 <DescriptionIcon fontSize="large" />
               </a>
             </div>

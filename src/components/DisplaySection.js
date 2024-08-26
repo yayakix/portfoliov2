@@ -6,7 +6,7 @@ import Experience from "./Experience";
 
 const DisplaySection = () => {
   return (
-    <div className="mt-10">
+    <div className="">
       <div class="relative">
         <div class="">
           <div class="">
