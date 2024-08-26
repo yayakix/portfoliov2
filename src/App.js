@@ -19,10 +19,10 @@ function App() {
     <Router>
       <div className="App w-full lg:flex h-screen scroll-smooth">
         <Navbar /> {/* Add the Navbar component */}
-        <div className="relative z-10 px-4 md:pt-36 md:pt-16 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:overflow-hidden">
+        <div className="relative z-10 pt-8 px-4 sm:pt-16 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:overflow-hidden">
           <Home />
         </div>
-        <div className="flex-1 lg:overflow-y-auto mt-16">
+        <div className="flex-1 lg:overflow-y-auto mt-10">
           <DisplaySection />
         </div>
         <button
