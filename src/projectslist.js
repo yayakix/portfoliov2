@@ -27,7 +27,7 @@ export default [
     img: `${process.env.PUBLIC_URL}/images/aquacraft.png`,
     description:
       "An ecommerce site I built for a local business owner (my mom). Uses Firebase and Firestore for login and storage. It utilizes the Stripe API to process payments. ",
-    livelink: "https://main--aquacrafts-store.netlify.app/",
+    livelink: "https://aquacrafts-store.netlify.app/",
     codelink: "https://github.com/yayakix/aqua_crafts_store",
   },
   {

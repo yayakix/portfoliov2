@@ -6,15 +6,13 @@ function AnimationComponent() {
         <TypeAnimation
             sequence={[
                 // Same substring at the start will only be typed out once, initially
-                'QA Engineer',
-                2000, // wait 1s before replacing "Mice" with "Hamsters"
-                'Software Developer',
+                'Software Engineer',
+                4000, // wait 1s before replacing "Mice" with "Hamsters"
+                'Dog Mom',
                 2000,
                 'Turtle Mom',
                 2000,
-                'Gamer',
-                2000,
-                'Traveler',
+                'World traveler',
                 2000,
             ]}
             wrapper="span"

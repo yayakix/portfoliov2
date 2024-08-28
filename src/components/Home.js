@@ -20,19 +20,7 @@ function Home() {
       url: "https://docs.google.com/document/d/10DHq4Xq6HKmtkbnLC8-JJA_4nqbkPZ-RNV2bcQ6QnhQ/edit?usp=sharing",
     },
   ];
-  const titlesList = [
-    {
-      text: " QA Engineer",
-    },
-    {
-      text: "Software Developer",
-    },
-  ];
-  const springs = useSpring({
-    from: { x: 500, opacity: 0 },
-    to: { x: 0, opacity: 1 },
-    delay: 500,
-  });
+
   return (
     <div className="relative mx-auto md:max-w-2xl min-w-0 lg:mt-20 text-sm sm:text-xl dark:bg-black">
       <div className="flex flex-wrap justify-center">
