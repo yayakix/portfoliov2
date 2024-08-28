@@ -1,12 +1,25 @@
 const Experience = () => {
   const data = [
     {
-      dates: "October 2022 - Present",
+      dates: "July 2023 - Present (Contract)",
+      title: "Raise Robotics",
+      role: "Frontend Software Engineer",
+      link: "https://raiserobotics.ai/",
+      description: `Created a user friendly GUI to interface with a Robotic Operating System (ROS). 
+      Utilized Google Cloud to create a VM instance to run Ubuntu through remote desktop. Used Ubuntu's Advanced Packaging Tool (APT) to install ROS and other dependencies.
+      Worked with roslibjs to allow for a Typescript web app to interface with ROS topics and services. `,
+      tools: "React, Typescript, Python, Google Cloud, Ubuntu, ROS",
+    },
+    {
+      dates: "October 2022 - August 2023",
       title: "Tenet Energy",
-      role: "QA/FE Engineer",
+      role: "Software Engineer",
       link: "https://www.linkedin.com/company/tenetenergy/mycompany/",
-      description:
-        "Worked as a QA Engineer at an early Fintech startup, primarily using Cypress for end-to-end testing. Responsibilities included creating and maintaining automated test scripts, performing manual QA to ensure software quality, and collaborating with development teams to identify and resolve defects. Additionally, contributed as a front-end developer by implementing Figma designs and performing bug fixes.",
+      description: `Worked as a software engineer at an early Fintech startup.
+       Contributed as a front-end developer by implementing new features from Figma designs and performing bug fixes. 
+       Additionally, contributed as a QA engineer by creating and maintaining automated test scripts, performing QA to ensure software quality,
+        and collaborating with development teams to identify and resolve defects. `,
+      tools: "Typescript, React, Cypress, Node.js, Python, AWS",
     },
     {
       dates: "May 2022 - August 2022",
@@ -33,12 +46,12 @@ const Experience = () => {
         </h1>
       </div>
       {data.map((item) => (
-        <div className="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100 text-left">
+        <div className="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100 text-left rounded-lg shadow-lg p-4">
           <div className="flex flex-col items-start">
             <div className="w-full text-left">
               <time
                 dateTime="2022-02-10T00:00:00.000Z"
-                className="font-mono text-sm leading-7 text-slate-500"
+                className="font-mono text-xs leading-7 text-slate-500"
               >
                 {item.dates}
               </time>
@@ -64,6 +77,9 @@ const Experience = () => {
             </h3>
             <p className="mt-1 text-base leading-7 text-slate-700 text-left">
               {item.description}
+            </p>
+            <p className="mt-1 text-base leading-7 text-pink-500 text-left">
+              {item.tools}
             </p>
           </div>
         </div>
