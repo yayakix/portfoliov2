@@ -1,7 +1,7 @@
 const Experience = () => {
   const data = [
     {
-      dates: "July 2023 - Present (Contract)",
+      dates: "July 2024 - Present (Contract)",
       title: "Raise Robotics",
       role: "Frontend Software Engineer",
       link: "https://raiserobotics.ai/",
@@ -11,7 +11,7 @@ const Experience = () => {
       tools: "React, Typescript, Python, Google Cloud, Ubuntu, ROS",
     },
     {
-      dates: "October 2022 - August 2023",
+      dates: "October 2022 - June 2024",
       title: "Tenet Energy",
       role: "Software Engineer",
       link: "https://www.linkedin.com/company/tenetenergy/mycompany/",
