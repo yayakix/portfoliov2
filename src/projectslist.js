@@ -21,6 +21,7 @@ export default [
   //   codelink:
   //     "https://github.com/fractal-bootcamp/iyanamarquez.socialartwebsite",
   // },
+
   {
     id: 5,
     title: "Aqua Crafts",
@@ -31,6 +32,15 @@ export default [
     codelink: "https://github.com/yayakix/aqua_crafts_store",
   },
   {
+    id: 9,
+    title: "NVIDIA Landing Page Clone",
+    img: `${process.env.PUBLIC_URL}/images/nvidiaclone.png`,
+    description:
+      "A clone of the NVIDIA landing page to demonstrate my ability to turn designs into code. Built with React and Tailwind.",
+    livelink: "https://nvidia-clone-yaya.netlify.app/",
+    codelink: "https://github.com/yayakix/nvidia-clone",
+  },
+  {
     id: 7,
     title: "Tic Tac Toe",
     img: `${process.env.PUBLIC_URL}/images/tictacimage.png`,
@@ -39,23 +49,7 @@ export default [
     livelink: "https://tictactoe-yaya.netlify.app/",
     codelink: "https://github.com/yayakix/tictactoe-websockets",
   },
-  {
-    id: 8,
-    title: "Alg Visualizer",
-    img: `${process.env.PUBLIC_URL}/images/algvisualizer.png`,
-    description: `This web application showcases real-time visualizations of fundamental algorithms. It offers an intuitive way to understand algorithm behaviors through engaging visuals`,
-    livelink: "https://alg-visualiz3r.netlify.app/",
-    codelink: "https://github.com/yayakix/iyanamarquez.Algorithmsv1",
-  },
-  {
-    id: 9,
-    title: "Todo list",
-    img: `${process.env.PUBLIC_URL}/images/todolist.png`,
-    description: `Simple todo list app built with React and Tailwind. Notes data is saved to local storage and managed with Zustand.`,
-    livelink: "https://todolist-yaya.netlify.app/",
-    codelink:
-      "https://github.com/fractal-bootcamp/iyanamarquez.task-management",
-  },
+
   // {
   //   id: 1,
   //   title: "Funky Shoes",
@@ -74,6 +68,24 @@ export default [
                 handling percents and negative numbers.`,
     livelink: "https://simplecalculator-7d4924.netlify.app/",
     codelink: "https://github.com/yayakix/calculator-react",
+  },
+
+  {
+    id: 9,
+    title: "Todo list",
+    img: `${process.env.PUBLIC_URL}/images/todolist.png`,
+    description: `Simple todo list app built with React and Tailwind. Notes data is saved to local storage and managed with Zustand.`,
+    livelink: "https://todolist-yaya.netlify.app/",
+    codelink:
+      "https://github.com/fractal-bootcamp/iyanamarquez.task-management",
+  },
+  {
+    id: 8,
+    title: "Alg Visualizer",
+    img: `${process.env.PUBLIC_URL}/images/algvisualizer.png`,
+    description: `This web application showcases real-time visualizations of fundamental algorithms. It offers an intuitive way to understand algorithm behaviors through engaging visuals`,
+    livelink: "https://alg-visualiz3r.netlify.app/",
+    codelink: "https://github.com/yayakix/iyanamarquez.Algorithmsv1",
   },
   {
     id: 4,
