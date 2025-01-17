@@ -54,11 +54,7 @@ function Home() {
               </p>
               <section class=" lg:block">
                 <p class="text-xs md:text-md leading-7 text-slate-700 lg:line-clamp-4 py-2">
-                  Creative, detail-oriented, developer with a deep interest in
-                  solving common problems. Proven track record of creating and
-                  implementing successful front and back end web applications.
-                  I'm able to quickly pick up new technologies and enjoy the
-                  process of learning new things.
+                  I’m a Software Engineer with a passion for web development and automation. I love building web apps that are not only functional but also efficient and easy to use. I’ve worked with JavaScript, TypeScript, and React to create smooth user experiences, and I’ve also used Cypress for automated testing and set up CI/CD pipelines to make deployments faster and more reliable.
                 </p>
               </section>
             </div>
