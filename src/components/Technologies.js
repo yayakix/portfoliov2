@@ -2,8 +2,10 @@ import "../css/Tech.css";
 import { useSpring, animated } from "@react-spring/web";
 import { motion, useTime, useTransform } from "framer-motion";
 import { useState } from "react";
+import { useTheme } from "../ThemeContext";
 
 function Technologies() {
+  const { darkMode } = useTheme();
   const [hovered, setHovered] = useState(false);
   const time = useTime();
   const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
@@ -30,31 +32,49 @@ function Technologies() {
     { id: 18, icon: "devicon-canva-original" },
     { id: 19, icon: "devicon-typescript-plain" },
   ];
+
   return (
-    <div className="techpage dark:bg-black" id="technologies">
-      <div className="flex justify-center items-center mb-8">
-        <h2 className="text-pink-500 flex justify-center mx-4 text-3xl">
-          Technologies
+    <div
+      className={`py-16 ${darkMode ? "bg-gray-900" : "bg-gray-50"}`}
+      id="skills"
+    >
+      <div className="flex flex-col items-center mb-12">
+        <h2
+          className={`text-4xl font-bold mb-4 ${
+            darkMode ? "text-pink-400" : "text-pink-500"
+          }`}
+        >
+          Technical Skills
         </h2>
+        <div className="w-24 h-1 bg-pink-500 rounded"></div>
       </div>
 
-      <div className="techcontainer container p-2 md:p-10">
-        <div className="row row-cols-4 md:row-cols-2 g-2 g-lg-3">
-          {iconList.map((icon) => {
-            return (
-              <div className="col" key={icon.id}>
-                <div className="col p-1 md:p-4 border dark:bg-black ">
-                  <motion.div style={hovered ? { rotate: rotate } : {}}>
-                    <i
-                      onMouseEnter={() => setHovered(true)}
-                      onMouseLeave={() => setHovered(false)}
-                      className={icon.icon}
-                    ></i>
-                  </motion.div>
-                </div>
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          {iconList.map((icon) => (
+            <div key={icon.id} className="flex justify-center">
+              <div
+                className={`p-6 rounded-lg transition-all duration-300 ${
+                  darkMode
+                    ? "bg-gray-800/30 hover:shadow-lg hover:shadow-pink-500/20"
+                    : "bg-white hover:shadow-lg hover:shadow-pink-500/20"
+                }`}
+              >
+                <motion.div
+                  style={hovered ? { rotate } : {}}
+                  className={`text-4xl sm:text-5xl flex justify-center ${
+                    darkMode ? "text-gray-200" : "text-gray-800"
+                  }`}
+                >
+                  <i
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                    className={`${icon.icon} hover:text-pink-500 transition-colors duration-300`}
+                  ></i>
+                </motion.div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -1,4 +1,7 @@
+import { useTheme } from "../ThemeContext";
+
 const Experience = () => {
+  const { darkMode } = useTheme();
   const data = [
     {
       dates: "July 2024 - Present (Contract)",
@@ -38,56 +41,97 @@ const Experience = () => {
         "Worked as a Lab Assistant in multiple departments, responsible for handling and processing biological samples. Duties included maintaining and troubleshooting laboratory equipment, ensuring accurate sample tracking, and adhering to strict safety and quality protocols. Collaborated with lab technicians and other staff to support efficient lab operations.",
     },
   ];
+
   return (
-    <div id="home">
-      <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0 mt-16">
-        <h1 className="text-2xl font-bold leading-7 text-slate-900 text-center">
-          Experience
-        </h1>
-      </div>
-      {data.map((item) => (
-        <div className="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100 text-left rounded-lg shadow-lg p-4">
-          <div className="flex flex-col items-start">
-            <div className="w-full text-left">
-              <time
-                dateTime="2022-02-10T00:00:00.000Z"
-                className="font-mono text-xs leading-7 text-slate-500"
-              >
-                {item.dates}
-              </time>
-            </div>
-            <h2
-              id="episode-3-title"
-              className="mt-2 text-lg font-bold text-slate-900 w-full text-left"
-            >
-              <a
-                href={item.link ? item.link : null}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {item.title}
-              </a>
-            </h2>
-
-            <h3
-              className=" gap-x-3 text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900"
-              aria-hidden="true"
-            >
-              {item.role}
-            </h3>
-            <p className="mt-1 text-base leading-7 text-slate-700 text-left">
-              {item.description}
-            </p>
-            <p className="mt-1 text-base leading-7 text-pink-500 text-left">
-              {item.tools}
-            </p>
-          </div>
+    <section
+      id="experience"
+      className={`py-16 ${darkMode ? "bg-gray-900" : "bg-white"}`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-12">
+          <h2
+            className={`text-3xl font-bold text-center ${
+              darkMode ? "text-white" : "text-slate-900"
+            }`}
+          >
+            Professional Experience
+          </h2>
+          <div className="w-20 h-1 bg-pink-500 mx-auto mt-4"></div>
         </div>
-      ))}
-      <div className="py-4 divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-1000 text-left"></div>
 
-      {/* section */}
-    </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className={`group relative p-6 rounded-lg shadow-md 
+                         transition-all duration-300 hover:shadow-lg ${
+                           darkMode
+                             ? "bg-gray-800 border-gray-700 hover:border-pink-800"
+                             : "bg-white border-slate-100 hover:border-pink-100"
+                         }`}
+            >
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-2">
+                    <h3
+                      className={`text-xl font-bold ${
+                        darkMode ? "text-white" : "text-slate-900"
+                      }`}
+                    >
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hover:text-pink-600 transition-colors"
+                      >
+                        {item.title}
+                      </a>
+                    </h3>
+                    <span className="text-pink-500 font-semibold">•</span>
+                    <span className="text-pink-500 font-medium">
+                      {item.role}
+                    </span>
+                  </div>
+
+                  <time
+                    className={`text-sm mb-4 block ${
+                      darkMode ? "text-gray-400" : "text-slate-500"
+                    }`}
+                  >
+                    {item.dates}
+                  </time>
+
+                  <p
+                    className={`whitespace-pre-line mb-4 ${
+                      darkMode ? "text-gray-300" : "text-slate-700"
+                    }`}
+                  >
+                    {item.description}
+                  </p>
+
+                  {item.tools && (
+                    <div className="flex flex-wrap gap-2">
+                      {item.tools.split(", ").map((tool, toolIndex) => (
+                        <span
+                          key={toolIndex}
+                          className={`px-3 py-1 text-sm font-medium rounded-full ${
+                            darkMode
+                              ? "bg-pink-900/30 text-pink-300 border-pink-800"
+                              : "bg-pink-50 text-pink-600 border-pink-100"
+                          } border`}
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

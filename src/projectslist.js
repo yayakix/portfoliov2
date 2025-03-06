@@ -79,14 +79,14 @@ export default [
     codelink:
       "https://github.com/fractal-bootcamp/iyanamarquez.task-management",
   },
-  {
-    id: 8,
-    title: "Alg Visualizer",
-    img: `${process.env.PUBLIC_URL}/images/algvisualizer.png`,
-    description: `This web application showcases real-time visualizations of fundamental algorithms. It offers an intuitive way to understand algorithm behaviors through engaging visuals`,
-    livelink: "https://alg-visualiz3r.netlify.app/",
-    codelink: "https://github.com/yayakix/iyanamarquez.Algorithmsv1",
-  },
+  // {
+  //   id: 8,
+  //   title: "Alg Visualizer",
+  //   img: `${process.env.PUBLIC_URL}/images/algvisualizer.png`,
+  //   description: `This web application showcases real-time visualizations of fundamental algorithms. It offers an intuitive way to understand algorithm behaviors through engaging visuals`,
+  //   livelink: "https://alg-visualiz3r.netlify.app/",
+  //   codelink: "https://github.com/yayakix/iyanamarquez.Algorithmsv1",
+  // },
   {
     id: 4,
     title: "Simon Says",

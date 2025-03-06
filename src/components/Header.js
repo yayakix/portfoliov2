@@ -1,12 +1,10 @@
-import { useState } from "react";
 import "../css/Header.css";
-import ColorScheme from "./ColorScheme";
 
 function Header() {
   const headerList = [
     {
       name: "About",
-      url: "#about",
+      url: "#",
     },
     {
       name: "Projects",
@@ -38,20 +36,7 @@ function Header() {
             </li>
           );
         })}
-        <ColorScheme />
       </div>
-      {/* <div className="bottomnav">
-          <li>
-            <a
-              href="https://docs.google.com/document/d/10DHq4Xq6HKmtkbnLC8-JJA_4nqbkPZ-RNV2bcQ6QnhQ/edit?usp=sharing"
-              id="resume"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resume
-            </a>
-          </li>
-        </div> */}
     </div>
   );
 }
