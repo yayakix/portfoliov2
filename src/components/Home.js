@@ -1,11 +1,18 @@
 import "../css/Home.css";
-import AnimationComponent from "./TypeAnimation.tsx";
 import { useSpring, animated } from "@react-spring/web";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DescriptionIcon from "@mui/icons-material/Description";
+import { useTheme } from "../ThemeContext";
 
 function Home() {
+  const { darkMode } = useTheme();
+  const fadeIn = useSpring({
+    from: { opacity: 0, transform: "translateY(20px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+    config: { duration: 1000 },
+  });
+
   const linkList = [
     {
       name: "Github",
@@ -22,78 +29,108 @@ function Home() {
   ];
 
   return (
-    <div className="relative mx-auto md:max-w-2xl min-w-0 lg:mt-20 text-sm sm:text-xl dark:bg-black">
-      <div className="flex flex-wrap justify-center">
-        <div className="w-full flex justify-center ">
-          <img
-            src="https://i.imgur.com/x7wCu69.jpg"
-            className="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px] relative"
-          />
-        </div>
-        <div className="flex justify-center mt-24 ">
-          <AnimationComponent />
-        </div>
-      </div>
-      <div className="text-center mt-2 ">
-        <h3 className="text-2xl text-slate-700 font-bold leading-normal mb-1 dark:text-white">
-          Iyana Marquez <span className="hand wave">👋🏽</span>
-        </h3>
-        <div className="text-xs mt-0 mb-2 text-slate-400 font-bold uppercase dark:text-white">
-          <i className="fas fa-map-marker-alt mr-2 text-slate-400 opacity-75 "></i>
-          Tampa, Florida
-        </div>
-      </div>
-      <div className=" border-t border-slate-200 text-center">
-        <div className="flex flex-wrap justify-center">
-          <div className="w-full ">
-            <div class="mt-2 sm:mt-0 text-center lg:mt-12 lg:text-left">
-              <p class="text-xl font-bold text-slate-900 ">
-                <a href="/" className="text-pink-500">
-                  About me
-                </a>
-              </p>
-              <section class=" lg:block">
-                <p class="text-xs md:text-md leading-7 text-slate-700 lg:line-clamp-4 py-2">
-                  I’m a Software Engineer with a passion for web development and automation. I love building web apps that are not only functional but also efficient and easy to use. I’ve worked with JavaScript, TypeScript, and React to create smooth user experiences, and I’ve also used Cypress for automated testing and set up CI/CD pipelines to make deployments faster and more reliable.
-                </p>
-              </section>
+    <animated.div
+      style={fadeIn}
+      className={`pt-32 pb-16 flex items-center justify-center px-4 ${
+        darkMode ? "bg-gray-900" : "bg-gray-50"
+      }`}
+    >
+      <div className="max-w-7xl w-full mx-auto grid md:grid-cols-2 items-center">
+        {/* Left Column - Profile */}
+        <div className="flex flex-col items-center md:items-end space-y-6">
+          <div className="relative">
+            <img
+              src="https://i.imgur.com/x7wCu69.jpg"
+              className="w-48 h-48 rounded-full shadow-2xl border-4 border-pink-500"
+              alt="Profile"
+            />
+            <div className="absolute -bottom-2 -right-2 bg-pink-500 text-white px-4 py-1 rounded-full text-sm">
+              Developer
             </div>
-            <div className="">
+          </div>
+
+          <div className="text-center md:text-right">
+            <h1
+              className={`text-4xl font-bold ${
+                darkMode ? "text-white" : "text-slate-800"
+              }`}
+            >
+              Iyana Marquez <span className="hand wave">👋🏽</span>
+            </h1>
+            <p
+              className={`mt-2 ${
+                darkMode ? "text-slate-300" : "text-slate-600"
+              }`}
+            >
+              <i className="fas fa-map-marker-alt mr-2"></i>
+              Tampa, Florida
+            </p>
+          </div>
+
+          <div className="flex space-x-6">
+            {linkList.map((link, index) => (
               <a
-                href={linkList[0].url}
+                key={link.name}
+                href={link.url}
                 target="_blank"
-                className="text-pink-500 hover:text-black transition-colors duration-200"
+                rel="noopener noreferrer"
+                className="transform hover:scale-110 transition-transform duration-200"
               >
-                <GitHubIcon fontSize="large" />
+                {index === 0 && (
+                  <GitHubIcon
+                    className={`text-pink-500 text-3xl ${
+                      darkMode ? "hover:text-white" : "hover:text-slate-800"
+                    }`}
+                  />
+                )}
+                {index === 1 && (
+                  <LinkedInIcon
+                    className={`text-pink-500 text-3xl ${
+                      darkMode ? "hover:text-white" : "hover:text-slate-800"
+                    }`}
+                  />
+                )}
+                {index === 2 && (
+                  <DescriptionIcon
+                    className={`text-pink-500 text-3xl ${
+                      darkMode ? "hover:text-white" : "hover:text-slate-800"
+                    }`}
+                  />
+                )}
               </a>
-              <a
-                href={linkList[1].url}
-                target="_blank"
-                className="text-pink-500 hover:text-black transition-colors duration-200"
-              >
-                <LinkedInIcon fontSize="large" />
-              </a>
-              <a
-                href={linkList[2].url}
-                target="_blank"
-                className="text-pink-500 hover:text-black transition-colors duration-200"
-              >
-                <DescriptionIcon fontSize="large" />
-              </a>
-            </div>
-            {/* <p className="font-light leading-relaxed text-slate-600 mb-4 dark:text-white">
-                Creative, detail-oriented, developer with a deep interest in
-                solving common problems. Proven track record of creating and
-                implementing successful front and back end web applications. I'm
-                able to quickly pick up new technologies and enjoy the process
-                of learning new things. I'm currently looking to bring my skills
-                to a tech company where I can create modern, responsive, and
-                user-friendly websites.
-              </p> */}
+            ))}
+          </div>
+        </div>
+
+        {/* Right Column - About */}
+        <div className="space-y-6">
+          <div
+            className={`rounded-2xl p-6 shadow-xl ${
+              darkMode ? "bg-slate-800" : "bg-white"
+            }`}
+          >
+            <h2 className="text-2xl font-bold text-pink-500 mb-4">About me</h2>
+            <p
+              className={`leading-relaxed ${
+                darkMode ? "text-slate-300" : "text-slate-700"
+              }`}
+            >
+              Full-stack developer with a unique background in Microbiology,
+              bringing analytical thinking and scientific methodology to
+              software development. Experienced in building end-to-end web
+              applications and quality assurance automation using Cypress.
+              Currently exploring cybersecurity while focusing on full-stack
+              development. I combine my scientific background with technical
+              skills to approach problem-solving from different angles, and I'm
+              passionate about creating efficient, user-friendly solutions.
+              Actively seeking a software engineering role where I can
+              contribute my diverse skill set and continue growing as a
+              developer.
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 }
 

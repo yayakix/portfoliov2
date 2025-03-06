@@ -19,34 +19,28 @@ function Footer() {
     },
   ];
   return (
-    <footer className="footer text-2xl " id="contact">
-      <div className="flex justify-center items-center ">
-        <h2
-          className=" text-pink-500 flex justify-center text-3xl"
-          id="contact"
-        >
-          Contact
-        </h2>
-      </div>
+    <footer className="footer text-2xl py-8 bg-gray-900" id="contact">
+      <div className="flex flex-col items-center space-y-6">
+        <h2 className="text-pink-500 text-4xl font-bold mb-4">Contact</h2>
 
-      <div className="group ">
-        {linkList.map((item) => {
-          return (
+        <div className="flex flex-wrap justify-center gap-4">
+          {linkList.map((item) => (
             <a
-              className="mx-2"
+              key={item.name}
+              className="px-6 py-2 text-white hover:text-pink-500 transition-colors duration-300 border-2 border-pink-500 rounded-full hover:bg-pink-500/10"
               href={item.url}
               target="_blank"
               rel="noreferrer"
             >
               {item.name}
             </a>
-          );
-        })}
-      </div>
+          ))}
+        </div>
 
-      <span className="copyright text-sm md:text-xl self-end">
-        &copy; Iyana Marquez {year}{" "}
-      </span>
+        <span className="copyright text-sm md:text-xl text-gray-400 mt-6">
+          &copy; Iyana Marquez {year}
+        </span>
+      </div>
     </footer>
   );
 }

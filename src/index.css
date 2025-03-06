@@ -17,9 +17,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+body[data-theme="light"] {
+  background-color: var(--background-light);
+  color: var(--text-light);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Add these classes for theme support */
+:root {
+  --background-light: #ffffff;
+  --text-light: #1a202c;
+  --background-dark: #1a202c;
+  --text-dark: #ffffff;
 }
