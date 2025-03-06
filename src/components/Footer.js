@@ -15,7 +15,7 @@ function Footer() {
     },
     {
       name: "Resume",
-      url: "https://docs.google.com/document/d/10DHq4Xq6HKmtkbnLC8-JJA_4nqbkPZ-RNV2bcQ6QnhQ/edit?usp=sharing",
+      url: "https://docs.google.com/document/d/1dq3Ha8nyw1BNsVoW6hVOgXVS9kiMFIexM62yVxlVyS8/edit?usp=sharing",
     },
   ];
   return (
