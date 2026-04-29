@@ -1,45 +1,92 @@
-import "../css/Footer.css";
+import { Link } from "react-router-dom";
+import { useTheme } from "../ThemeContext";
 
 function Footer() {
-  const d = new Date();
-  const year = d.getFullYear();
+  const { darkMode } = useTheme();
+  const year = new Date().getFullYear();
 
-  const linkList = [
-    {
-      name: "Github",
-      url: "https://github.com/yayakix",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/iyana-marquez/",
-    },
-    {
-      name: "Resume",
-      url: "https://docs.google.com/document/d/1dq3Ha8nyw1BNsVoW6hVOgXVS9kiMFIexM62yVxlVyS8/edit?usp=sharing",
-    },
+  const externalLinks = [
+    { name: "GitHub", url: "https://github.com/yayakix" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/iyana-marquez/" },
   ];
-  return (
-    <footer className="footer text-2xl py-8 bg-gray-900" id="contact">
-      <div className="flex flex-col items-center space-y-6">
-        <h2 className="text-pink-500 text-4xl font-bold mb-4">Contact</h2>
 
-        <div className="flex flex-wrap justify-center gap-4">
-          {linkList.map((item) => (
-            <a
-              key={item.name}
-              className="px-6 py-2 text-white hover:text-pink-500 transition-colors duration-300 border-2 border-pink-500 rounded-full hover:bg-pink-500/10"
-              href={item.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {item.name}
-            </a>
-          ))}
+  const siteLinks = [
+    { name: "Home", to: "/" },
+    { name: "Journey", to: "/journey" },
+    { name: "Experience", to: "/experience" },
+    { name: "Learning", to: "/learning" },
+    { name: "Projects Archive", to: "/projects" },
+  ];
+
+  return (
+    <footer className={`py-12 px-4 ${darkMode ? "bg-gray-800" : "bg-gray-100"}`}>
+      <div className="max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          {/* Brand */}
+          <div>
+            <h3 className={`font-semibold mb-3 ${darkMode ? "text-white" : "text-gray-900"}`}>
+              Iyana Marquez
+            </h3>
+            <p className={`text-sm ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
+              Software Engineer focused on agent quality, testing, and support.
+            </p>
+          </div>
+
+          {/* Site Links */}
+          <div>
+            <h4 className={`text-sm font-semibold mb-3 ${darkMode ? "text-gray-300" : "text-gray-700"}`}>
+              Site
+            </h4>
+            <ul className="space-y-2">
+              {siteLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.to}
+                    className={`text-sm transition-colors ${
+                      darkMode
+                        ? "text-gray-400 hover:text-white"
+                        : "text-gray-600 hover:text-gray-900"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Connect */}
+          <div>
+            <h4 className={`text-sm font-semibold mb-3 ${darkMode ? "text-gray-300" : "text-gray-700"}`}>
+              Connect
+            </h4>
+            <ul className="space-y-2">
+              {externalLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`text-sm transition-colors ${
+                      darkMode
+                        ? "text-gray-400 hover:text-white"
+                        : "text-gray-600 hover:text-gray-900"
+                    }`}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <span className="copyright text-sm md:text-xl text-gray-400 mt-6">
-          &copy; Iyana Marquez {year}
-        </span>
+        {/* Copyright */}
+        <div className={`pt-6 border-t ${darkMode ? "border-gray-700" : "border-gray-200"}`}>
+          <p className={`text-sm text-center ${darkMode ? "text-gray-500" : "text-gray-400"}`}>
+            © {year} Iyana Marquez
+          </p>
+        </div>
       </div>
     </footer>
   );

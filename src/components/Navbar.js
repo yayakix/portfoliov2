@@ -1,131 +1,130 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../ThemeContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { darkMode, toggleTheme } = useTheme();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/journey", label: "Journey" },
+    { to: "/experience", label: "Experience" },
+    { to: "/learning", label: "Learning" },
+  ];
+
+  const isActive = (path) => location.pathname === path;
+
   return (
     <nav
       className={`fixed w-full z-10 transition-colors duration-300 ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
-      }`}
+      } shadow-sm`}
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-bold text-gray-800">
+            <Link
+              to="/"
+              className={`text-xl font-semibold tracking-tight ${
+                darkMode ? "text-white" : "text-gray-900"
+              }`}
+            >
               Iyana Marquez
-            </a>
+            </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#experience"
-              className="text-gray-600 hover:text-gray-900 transition-colors duration-300"
-            >
-              Experience
-            </a>
-            <a
-              href="#projects"
-              className="text-gray-600 hover:text-gray-900 transition-colors duration-300"
-            >
-              Projects
-            </a>
-            <a
-              href="#skills"
-              className="text-gray-600 hover:text-gray-900 transition-colors duration-300"
-            >
-              Skills
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-600 hover:text-gray-900 transition-colors duration-300"
-            >
-              Contact
-            </a>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-gray-600 hover:text-gray-900 focus:outline-none"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`text-sm font-medium transition-colors duration-200 ${
+                  isActive(link.to)
+                    ? "text-pink-500"
+                    : darkMode
+                    ? "text-gray-300 hover:text-white"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
               >
-                {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
-            </button>
+                {link.label}
+              </Link>
+            ))}
           </div>
 
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
-          >
-            {darkMode ? "☀️" : "🌙"}
-          </button>
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={toggleTheme}
+              className={`p-2 rounded-lg transition-colors ${
+                darkMode ? "hover:bg-gray-700" : "hover:bg-gray-100"
+              }`}
+              aria-label="Toggle theme"
+            >
+              {darkMode ? "☀️" : "🌙"}
+            </button>
+
+            <div className="md:hidden">
+              <button
+                onClick={toggleMenu}
+                className={`p-2 rounded-lg ${
+                  darkMode ? "hover:bg-gray-700" : "hover:bg-gray-100"
+                }`}
+                aria-label="Toggle menu"
+              >
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  {isOpen ? (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  ) : (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  )}
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
 
-        {/* Mobile Menu */}
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } md:hidden transition-all duration-300 ease-in-out`}
+          } md:hidden transition-all duration-300 ease-in-out pb-4`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <a
-              href="#experience"
-              className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md"
-              onClick={toggleMenu}
-            >
-              Experience
-            </a>
-            <a
-              href="#projects"
-              className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md"
-              onClick={toggleMenu}
-            >
-              Projects
-            </a>
-            <a
-              href="#skills"
-              className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md"
-              onClick={toggleMenu}
-            >
-              Skills
-            </a>
-            <a
-              href="#contact"
-              className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md"
-              onClick={toggleMenu}
-            >
-              Contact
-            </a>
+          <div className="space-y-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`block px-3 py-2 rounded-md text-sm font-medium ${
+                  isActive(link.to)
+                    ? "text-pink-500 bg-pink-50 dark:bg-pink-900/20"
+                    : darkMode
+                    ? "text-gray-300 hover:text-white hover:bg-gray-800"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
+                onClick={toggleMenu}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

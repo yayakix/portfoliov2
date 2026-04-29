@@ -2,7 +2,6 @@ import "../css/Home.css";
 import { useSpring, animated } from "@react-spring/web";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DescriptionIcon from "@mui/icons-material/Description";
 import { useTheme } from "../ThemeContext";
 
 function Home() {
@@ -22,10 +21,6 @@ function Home() {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/iyana-marquez/",
     },
-    {
-      name: "Resume",
-      url: "https://docs.google.com/document/d/1dq3Ha8nyw1BNsVoW6hVOgXVS9kiMFIexM62yVxlVyS8/edit?usp=sharing",
-    },
   ];
 
   return (
@@ -40,7 +35,7 @@ function Home() {
         <div className="flex flex-col items-center md:items-end space-y-6">
           <div className="relative">
             <img
-              src="https://i.imgur.com/x7wCu69.jpg"
+              src={`${process.env.PUBLIC_URL}/images/mepic.png`}
               className="w-48 h-48 rounded-full shadow-2xl border-4 border-pink-500"
               alt="Profile"
             />
@@ -85,13 +80,6 @@ function Home() {
                 )}
                 {index === 1 && (
                   <LinkedInIcon
-                    className={`text-pink-500 text-3xl ${
-                      darkMode ? "hover:text-white" : "hover:text-slate-800"
-                    }`}
-                  />
-                )}
-                {index === 2 && (
-                  <DescriptionIcon
                     className={`text-pink-500 text-3xl ${
                       darkMode ? "hover:text-white" : "hover:text-slate-800"
                     }`}

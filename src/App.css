@@ -1,49 +1,27 @@
+/* Base styles for the app */
 .App {
-  text-align: center;
-  font-family: "Roboto Mono", monospace;
-}
-h2 {
-  text-align: center;
-}
-#projects {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Smooth page transitions */
+main {
+  min-height: calc(100vh - 64px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Refined link styles */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.projectintro {
-  text-align: left;
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #ec4899;
+  outline-offset: 2px;
 }
-html {
-  scroll-behavior: smooth;
+
+/* Selection color */
+::selection {
+  background-color: rgba(236, 72, 153, 0.2);
 }
